@@ -62,7 +62,7 @@ sensor:
       - temperature
 
   - platform: speedtest
-    server_id: 1296
+    server_id: !secret speedtest_server_id
     monitored_conditions:
       - ping
       - download
