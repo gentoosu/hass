@@ -1,0 +1,33 @@
+#  - alias: 'Turn living room lights on'
+#    trigger:
+#      platform: sun
+#      event: sunset
+#    action:
+#      service: homeassistant.turn_on
+#      entity_id: light.living_room_dimm_level_3_0
+
+  - alias: 'Turn outside garage lights on'
+    trigger:
+      platform: sun
+      event: sunset
+      offset: "+00:30:00"
+    action:
+      service: homeassistant.turn_on
+      entity_id: switch.garage_outside_light_switch_5_0
+
+#  - alias: 'Turn living rooms lights off'
+#    trigger:
+#      platform: time
+#      after: "21:00:00"
+#    action:
+#      service: homeassistant.turn_off
+#      entity_id: light.living_room_dimm_level_3_0
+
+  - alias: 'Turn outside garage lights off'
+    trigger:
+      platform: time
+      after: "23:59:00"
+    action:
+      service: homeassistant.turn_off
+      entity_id: switch.garage_outside_light_switch_5_0
+
