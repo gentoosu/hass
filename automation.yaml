@@ -47,3 +47,11 @@
     action:
       service: homeassistant.turn_off
       entity_id: switch.garage_outside_light_switch_5_0
+
+  - alias: 'Test trigger switch from another'
+    trigger:
+      platform: state.on
+      entity_id: switch.garage_outside_light_switch_5_0
+    action:
+      service: homeassistant.turn_on
+      entity_id: light.living_room_dimm_level_3_0
