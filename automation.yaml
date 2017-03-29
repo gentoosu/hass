@@ -50,7 +50,8 @@
 
   - alias: 'Test trigger switch from another'
     trigger:
-      platform: state.on
+      platform: state
+      state: on
       entity_id: switch.garage_outside_light_switch_5_0
     action:
       service: homeassistant.turn_on
