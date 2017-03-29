@@ -9,6 +9,10 @@ homeassistant:
   # metric for Metric, imperial for Imperial
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#  customize:
+#    light.living_room_dimm_level_3_0:
+#      emulated_hue_name: "living room light"
+
   time_zone: America/New_York
 
 # Show links to resources in log and frontend
@@ -96,8 +100,9 @@ media_player:
 
 automation: !include automation.yaml
 
-emulated_hue:
-  type: alexa
-  host_ip: 10.0.0.112
-  listen_port: 8300
-  advertise_port: 8080  
+#emulated_hue:
+#  type: alexa
+#  host_ip: 10.0.0.112
+#  listen_port: 8300
+#  advertise_port: 8080 
+
