@@ -55,4 +55,4 @@
       entity_id: switch.garage_outside_light_switch_5_0
     action:
       service: homeassistant.turn_on
-      entity_id: light.living_room_dimm_level_3_0
+      entity_id: switch.dining_room_light_main_switch_16_0
