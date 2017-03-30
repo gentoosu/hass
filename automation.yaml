@@ -56,5 +56,5 @@
     action:
       service: homeassistant.turn_on
       entity_id:
-        - switch.dining_room_light_other
-        - switch.dining_room_light_main
+        - switch.dining_room_light_other_switch_17_0
+        - switch.dining_room_light_main_switch_16_0
