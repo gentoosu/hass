@@ -52,9 +52,9 @@
     trigger:
       platform: state
       state: 'on'
-      entity_id: switch.garage_outside_light_switch_5_0 #, switch.dining_room_light_other_switch_17_0
+      entity_id: switch.garage_outside_light #, switch.dining_room_light_other_switch_17_0
     action:
       service: homeassistant.turn_on
       entity_id:
-        - switch.dining_room_light_main
         - switch.dining_room_light_other
+        - switch.dining_room_light_main
