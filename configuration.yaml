@@ -99,10 +99,3 @@ media_player:
     name: FireTV - Living Room
 
 automation: !include automation.yaml
-
-#emulated_hue:
-#  type: alexa
-#  host_ip: 10.0.0.112
-#  listen_port: 8300
-#  advertise_port: 8080 
-
