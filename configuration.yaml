@@ -99,3 +99,4 @@ media_player:
     name: FireTV - Living Room
 
 automation: !include automation.yaml
+
