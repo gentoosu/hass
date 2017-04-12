@@ -104,6 +104,10 @@ alarmdecoder:
     host: 127.0.0.1
     port: 10000
   panel_display: On
+  zones:
+    01:
+      name: 'Smoke Detector'
+      type: 'smoke'
 
 automation: !include automation.yaml
 
