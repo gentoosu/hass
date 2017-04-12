@@ -98,6 +98,13 @@ media_player:
     device: livingroom
     name: FireTV - Living Room
 
+alarmdecoder:
+  device:
+    type: socket
+    host: 127.0.0.1
+    port: 10000
+  panel_display: On
+
 automation: !include automation.yaml
 
 
