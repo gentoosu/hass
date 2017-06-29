@@ -4,7 +4,7 @@
     trigger:
       platform: sun
       event: sunset
-      offset: '+00:{{ (range(1, 59)|random|int) }}:00'
+      offset: '+00:45:00'
     action:
       service: homeassistant.turn_on
       entity_id: switch.garage_outside_light_switch_5_0
@@ -89,8 +89,8 @@
     trigger:
       platform: sun
       event: sunset
-      offset: '+00:{{ (range(1, 59)|random|int) }}:00'
     action:
+      delay: '+00:{{ (range(1, 59)|random|int) }}:00'
       service: homeassistant.turn_on
       entity_id: light.living_room_dimm_level_3_0
 
@@ -98,7 +98,7 @@
     trigger:
       platform: time
       after: "22:00:00"
-      offset: '+01:{{ (range(1, 59)|random|int) }}:00'
     action:
+      delay: '+01:{{ (range(1, 59)|random|int) }}:00'
       service: homeassistant.turn_off
       entity_id: light.living_room_dimm_level_3_0
