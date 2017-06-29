@@ -94,7 +94,7 @@
       service: homeassistant.turn_on
       entity_id: light.living_room_dimm_level_3_0
 
-- alias: 'Vacation - Turn living rooms lights off Evening'
+  - alias: 'Vacation - Turn living rooms lights off Evening'
     trigger:
       platform: time
       after: "22:00:00"
