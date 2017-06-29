@@ -1,9 +1,18 @@
-  - alias: 'Turn living room lights on Evening'
+  - alias: 'Vacation - Turn living room lights on Evening'
     trigger:
       platform: sun
       event: sunset
+      offset: '+00:{{ (range(1, 59)|random|int) }}:00'
     action:
       service: homeassistant.turn_on
+      entity_id: light.living_room_dimm_level_3_0
+
+- alias: 'Vacation - Turn living rooms lights off Evening'
+    trigger:
+      platform: time
+      after: "21:00:00"
+    action:
+      service: homeassistant.turn_off
       entity_id: light.living_room_dimm_level_3_0
 
   - alias: 'Turn outside garage lights on'
@@ -14,14 +23,6 @@
     action:
       service: homeassistant.turn_on
       entity_id: switch.garage_outside_light_switch_5_0
-
-  - alias: 'Turn living rooms lights off Evening'
-    trigger:
-      platform: time
-      after: "21:00:00"
-    action:
-      service: homeassistant.turn_off
-      entity_id: light.living_room_dimm_level_3_0
 
   - alias: 'Turn outside garage lights off'
     trigger:
