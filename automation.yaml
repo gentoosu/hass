@@ -85,4 +85,20 @@
         - switch.dining_room_light_other_switch_17_0
         - switch.dining_room_light_main_switch_16_0
 
- !include vacation_automation.yaml
+  - alias: 'Vacation - Turn living room lights on Evening'
+    trigger:
+      platform: sun
+      event: sunset
+      offset: '+00:{{ (range(1, 59)|random|int) }}:00'
+    action:
+      service: homeassistant.turn_on
+      entity_id: light.living_room_dimm_level_3_0
+
+- alias: 'Vacation - Turn living rooms lights off Evening'
+    trigger:
+      platform: time
+      after: "22:00:00"
+      offset: '+01:{{ (range(1, 59)|random|int) }}:00'
+    action:
+      service: homeassistant.turn_off
+      entity_id: light.living_room_dimm_level_3_0
