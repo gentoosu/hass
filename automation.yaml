@@ -99,6 +99,6 @@
       platform: time
       after: "22:00:00"
     action:
-      delay: '+01:{{ (range(1, 59)|random|int) }}:00'
+      delay: '01:{{ (range(1, 59)|random|int) }}:00'
       service: homeassistant.turn_off
       entity_id: light.living_room_dimm_level_3_0
