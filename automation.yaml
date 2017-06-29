@@ -1,10 +1,10 @@
-#  - alias: 'Turn living room lights on Evening'
-#    trigger:
-#      platform: sun
-#      event: sunset
-#    action:
-#      service: homeassistant.turn_on
-#      entity_id: light.living_room_dimm_level_3_0
+  - alias: 'Turn living room lights on Evening'
+    trigger:
+      platform: sun
+      event: sunset
+    action:
+      service: homeassistant.turn_on
+      entity_id: light.living_room_dimm_level_3_0
 
   - alias: 'Turn outside garage lights on'
     trigger:
@@ -15,13 +15,13 @@
       service: homeassistant.turn_on
       entity_id: switch.garage_outside_light_switch_5_0
 
-#  - alias: 'Turn living rooms lights off Evening'
-#    trigger:
-#      platform: time
-#      after: "21:00:00"
-#    action:
-#      service: homeassistant.turn_off
-#      entity_id: light.living_room_dimm_level_3_0
+  - alias: 'Turn living rooms lights off Evening'
+    trigger:
+      platform: time
+      after: "21:00:00"
+    action:
+      service: homeassistant.turn_off
+      entity_id: light.living_room_dimm_level_3_0
 
   - alias: 'Turn outside garage lights off'
     trigger:
@@ -32,15 +32,15 @@
       entity_id: switch.garage_outside_light_switch_5_0
 
   - alias: 'Turn outside garage lights on Morning'
-    trigger: 
+    trigger:
       platform: time
       after: "04:15:00"
     action:
       service: homeassistant.turn_on
       entity_id: switch.garage_outside_light_switch_5_0
-  
+
   - alias: 'Turn outside garage lighs off Morning'
-    trigger: 
+    trigger:
       platform: sun
       event: sunrise
       offset: "+00:30:00"
@@ -84,7 +84,7 @@
       entity_id:
         - switch.dining_room_light_other_switch_17_0
         - switch.dining_room_light_main_switch_16_0
-  
+
   - alias: 'Test trigger switch from anotheri2'
     trigger:
       platform: state
@@ -97,4 +97,3 @@
       entity_id:
         - switch.dining_room_light_other_switch_17_0
         - switch.dining_room_light_main_switch_16_0
-
