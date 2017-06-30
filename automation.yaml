@@ -2,10 +2,11 @@
     trigger:
       platform: sun
       event: sunset
-      offset: '+00:45:00'
+      #offset: '+00:45:00'
     action:
-      service: homeassistant.turn_on
-      entity_id: switch.garage_outside_light_switch_5_0
+      - service: homeassistant.turn_on
+        entity_id: switch.garage_outside_light_switch_5_0
+      - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
 
   - alias: 'Turn outside garage lights off'
     trigger:
