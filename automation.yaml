@@ -87,10 +87,10 @@
         entity_id: light.bedroom_dimm_level_18_0
 
    - alias: 'Vacation - Turn Bedroom Off'
-    trigger:
-      platform: state
-      state: 'on'
-      entity_id: light.bedroom_dimm_level_18_0
+     trigger:
+       platform: state
+       state: 'on'
+       entity_id: light.bedroom_dimm_level_18_0
     action:
       - service: homeassistant.turn_on
         entity_id: light.bedroom_dimm_level_18_0
