@@ -4,18 +4,18 @@
       platform: sun
       event: sunset
     action:
+      - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
       - service: homeassistant.turn_on
         entity_id: switch.garage_outside_light_switch_5_0
-      - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
 
   - alias: 'Turn outside garage lights off evening'
     trigger:
       platform: time
       after: "23:00:00"
     action:
+      - delay: +00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
         entity_id: switch.garage_outside_light_switch_5_0
-      - delay: +00:{{ (range(1, 59)|random|int) }}:00'
   - alias: 'Turn outside garage lights on Morning'
     trigger:
       platform: time
@@ -64,18 +64,18 @@
       platform: sun
       event: sunset
     action:
+      - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_on
         entity_id: light.living_room_dimm_level_3_0
-      - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
 
   - alias: 'Vacation - Turn living rooms lights off Evening'
     trigger:
       platform: time
       after: "22:00:00"
     action:
+      - delay: '01:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
         entity_id: light.living_room_dimm_level_3_0
-      - delay: '01:{{ (range(1, 59)|random|int) }}:00'
 
   - alias: 'Vacation - Turn Bedroom On after Living Room off'
     trigger:
@@ -92,6 +92,16 @@
       state: 'on'
       entity_id: light.bedroom_dimm_level_18_0
     action:
+      - delay: '00:{{ (range(15, 45)|random|int) }}:00'
       - service: homeassistant.turn_on
         entity_id: light.bedroom_dimm_level_18_0
-      - delay: '00:{{ (range(15, 45)|random|int) }}:00'
+
+  - alias: 'Delay test'
+    trigger:
+      platform: state
+      state: 'on'
+      entity_id: light.living_room_dimm_level_3_0
+    action:
+      - delay: '00:{{ (range(2, 4)|random|int) }}:00'
+      - service: homeassistant.turn_off
+        entity_id: light.living_room_dimm_level_3_0
