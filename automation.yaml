@@ -1,5 +1,5 @@
 
-  - alias: 'Turn outside garage lights on'
+  - alias: 'Turn outside garage lights on evening'
     trigger:
       platform: sun
       event: sunset
@@ -8,7 +8,7 @@
         entity_id: switch.garage_outside_light_switch_5_0
       - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
 
-  - alias: 'Turn outside garage lights off'
+  - alias: 'Turn outside garage lights off evening'
     trigger:
       platform: time
       after: "23:00:00"
