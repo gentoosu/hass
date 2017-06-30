@@ -1,8 +1,8 @@
+
   - alias: 'Turn outside garage lights on'
     trigger:
       platform: sun
       event: sunset
-      #offset: '+00:45:00'
     action:
       - service: homeassistant.turn_on
         entity_id: switch.garage_outside_light_switch_5_0
@@ -91,7 +91,7 @@
        platform: state
        state: 'on'
        entity_id: light.bedroom_dimm_level_18_0
-    action:
-      - service: homeassistant.turn_on
+     action:
+       - service: homeassistant.turn_on
         entity_id: light.bedroom_dimm_level_18_0
-      - delay: '00:{{ (range(15, 45)|random|int) }}:00'
+       - delay: '00:{{ (range(15, 45)|random|int) }}:00'
