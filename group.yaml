@@ -1,7 +1,7 @@
 default_view:
   view: yes
   entities:
-    - automation.update_available_notification
+    #- automation.update_available_notification
     - group.general
     - group.alarm
     - group.climate
