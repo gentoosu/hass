@@ -1,0 +1,35 @@
+default_view:
+  view: yes
+  entities:
+    - automation.update_available_notification
+    - group.general
+  
+
+general:
+  name: General
+   entities:
+    - sensor.date
+    - sensor.time
+    - sensor.moon
+
+alarm:
+  name: Alarm
+  entities:
+    - alarm_control_panel.alarm_panel
+    - sensor.alarm_panel_display
+    - input_select.alarm_mode
+
+climate:
+  name: Climate
+  entities:
+    - climate.hallway
+    - sensor.hallway_thermostat_humidity
+    - sensor.hallway_thermostat_hvac_state
+    - sensor.hallway_thermostat_operation_mode
+    - sensor.hallway_thermostat_target
+    - sensor.hallway_thermostat_temperature
+    - sensor.yweather_temperature
+    - sensor.yweather_humidity
+    - sensor.yweather_current
+    - sensor.yweather_condition
+
