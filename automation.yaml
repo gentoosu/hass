@@ -6,7 +6,7 @@
     action:
       - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
       - service: homeassistant.turn_on
-        entity_id: switch.garage_outside_light_switch_5_0
+        entity_id: switch.garage_outside_light_switch
 
   - alias: 'Turn outside garage lights off evening'
     trigger:
@@ -15,7 +15,7 @@
     action:
       - delay: +00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
-        entity_id: switch.garage_outside_light_switch_5_0
+        entity_id: switch.garage_outside_light_switch
 
   - alias: 'Turn outside garage lights on Morning'
     trigger:
@@ -23,7 +23,7 @@
       at: "04:15:00"
     action:
       service: homeassistant.turn_on
-      entity_id: switch.garage_outside_light_switch_5_0
+      entity_id: switch.garage_outside_light_switch
 
   - alias: 'Turn outside garage lighs off Morning'
     trigger:
@@ -32,33 +32,33 @@
       offset: "+00:30:00"
     action:
       service: homeassistant.turn_off
-      entity_id: switch.garage_outside_light_switch_5_0
+      entity_id: switch.garage_outside_light_switch
 
   - alias: 'Dining Room Lights On'
     trigger:
       platform: state
       to: 'on'
       entity_id:
-        - switch.dining_room_light_other_switch_17_0
-        - switch.dining_room_light_main_switch_16_0
+        - switch.dining_room_light_other_switch
+        - switch.dining_room_light_main_switch
     action:
       service: homeassistant.turn_on
       entity_id:
-        - switch.dining_room_light_other_switch_17_0
-        - switch.dining_room_light_main_switch_16_0
+        - switch.dining_room_light_other_switch
+        - switch.dining_room_light_main_switch
 
   - alias: 'Dining Room Lights Off'
     trigger:
       platform: state
       to: 'off'
       entity_id:
-        - switch.dining_room_light_other_switch_17_0
-        - switch.dining_room_light_main_switch_16_0
+        - switch.dining_room_light_other_switch
+        - switch.dining_room_light_main_switch
     action:
       service: homeassistant.turn_off
       entity_id:
-        - switch.dining_room_light_other_switch_17_0
-        - switch.dining_room_light_main_switch_16_0
+        - switch.dining_room_light_other_switch
+        - switch.dining_room_light_main_switch
 
   - alias: 'Vacation - Turn living room lights on Evening'
     trigger:
@@ -67,7 +67,7 @@
     action:
       - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_on
-        entity_id: light.living_room_dimm_level_3_0
+        entity_id: light.living_room_dimm_level
 
   - alias: 'Vacation - Turn living rooms lights off Evening'
     trigger:
@@ -76,33 +76,33 @@
     action:
       - delay: '01:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
-        entity_id: light.living_room_dimm_level_3_0
+        entity_id: light.living_room_dimm_level
 
   - alias: 'Vacation - Turn Bedroom On after Living Room off'
     trigger:
       platform: state
       to: 'off'
-      entity_id: light.living_room_dimm_level_3_0
+      entity_id: light.living_room_dimm_level
     action:
       - service: homeassistant.turn_on
-        entity_id: light.bedroom_dimm_level_18_0
+        entity_id: light.bedroom_dimm_level
 
   - alias: 'Vacation - Turn Bedroom Off'
     trigger:
       platform: state
       to: 'on'
-      entity_id: light.bedroom_dimm_level_18_0
+      entity_id: light.bedroom_dimm_level
     action:
       - delay: '00:{{ (range(15, 45)|random|int) }}:00'
       - service: homeassistant.turn_on
-        entity_id: light.bedroom_dimm_level_18_0
+        entity_id: light.bedroom_dimm_level
 
   - alias: 'Delay test'
     trigger:
       platform: state
       to: 'on'
-      entity_id: light.living_room_dimm_level_3_0
+      entity_id: light.living_room_dimm_level
     action:
       - delay: '00:{{ (range(2, 4)|random|int) }}:00'
       - service: homeassistant.turn_off
-        entity_id: light.living_room_dimm_level_3_0
+        entity_id: light.living_room_dimm_level
