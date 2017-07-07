@@ -7,7 +7,7 @@ default_view:
 
 general:
   name: General
-   entities:
+  entities:
     - sensor.date
     - sensor.time
     - sensor.moon
