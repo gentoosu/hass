@@ -15,9 +15,6 @@ homeassistant:
 
   time_zone: America/New_York
 
-# Show links to resources in log and frontend
-introduction:
-
 # Enables the frontend
 frontend:
 
@@ -36,14 +33,17 @@ http:
 updater:
 
 # Discover some devices automatically
-discovery:
+#discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#conversation:
 
 # Enables support for tracking state changes over time.
-history:
+#history:
 
+recorder:
+  purge_days: 21
+  
 # View all events in a logbook
 logbook:
 
@@ -100,5 +100,6 @@ media_player:
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
+group: !include group.yaml
 
 
