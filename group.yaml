@@ -4,7 +4,9 @@ default_view:
     #- automation.update_available_notification
     - group.general
     - group.alarm
-    - group.climate  
+    - group.climate
+    - group.automation
+    - group.vacation_automation
 
 general:
   name: General
