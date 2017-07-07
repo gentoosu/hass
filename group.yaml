@@ -3,6 +3,9 @@ default_view:
   entities:
     - automation.update_available_notification
     - group.general
+    - group.alarm
+    - group.climate
+    - 
   
 
 general:
