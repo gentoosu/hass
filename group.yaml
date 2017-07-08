@@ -7,6 +7,8 @@ default_view:
     - group.climate
     - group.automation
     - group.vacation_automation
+    - group.alarm_zones
+    - group.garage_doors
 
 general:
   name: General
