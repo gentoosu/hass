@@ -53,3 +53,26 @@ vacation_automation:
     - automation.vacation__turn_living_rooms_lights_off_evening
     - automation.vacation__turn_bedroom_on_after_living_room_off
     - automation.vacation__turn_bedroom_off
+
+alarm_zones:
+  name: Alarm Zones
+  entities:
+    - binary_sensor.bedroom_1_window
+    - binary_sensor.bedroom_2_window
+    - binary_sensor.family_rm_sliding_door
+    - binary_sensor.front_door
+    - binary_sensor.kitchen_motion
+    - binary_sensor.kitchen_sliding_door
+    - binary_sensor.kitchen_windows
+    - binary_sensor.laundry_room_door
+    - binary_sensor.living_rm_windows
+    - binary_sensor.master_sliding_door
+    - binary_sensor.master_windows
+    - binary_sensor.office_window
+    - binary_sensor.smoke_detector
+
+garage_doors:
+  name: Garage Doors
+  entities:
+    - cover.garage_door_main_controller_open
+    - binary_sensor.ecolink_tilt_sensor_sensor
