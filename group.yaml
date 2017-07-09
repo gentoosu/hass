@@ -9,6 +9,7 @@ default_view:
     - group.vacation_automation
     - group.alarm_zones
     - group.garage_doors
+    - group.lights
 
 general:
   name: General
@@ -78,3 +79,11 @@ garage_doors:
   entities:
     - cover.garage_door_main_controller_open
     - binary_sensor.ecolink_tilt_sensor_sensor
+
+lights:
+  name: Lights
+  entities:
+    - light.living_room_dimm_level
+    - switch.dining_room_light_main_switch
+    - switch.dining_room_light_other_switch
+    - switch.garage_outside_light_switch
