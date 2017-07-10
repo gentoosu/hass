@@ -103,7 +103,7 @@ alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
 
-- notify
+notify:
   - name: TEST
     platform: smtp
     server: smtp.gmail.com
