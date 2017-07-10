@@ -64,7 +64,7 @@ alarm_zones:
     - binary_sensor.bedroom_2_window
     - binary_sensor.family_rm_sliding_door
     - binary_sensor.front_door
-    - binary_sensor.kitchen_motion
+#    - binary_sensor.kitchen_motion
     - binary_sensor.kitchen_sliding_door
     - binary_sensor.kitchen_windows
     - binary_sensor.laundry_room_door
