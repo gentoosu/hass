@@ -97,6 +97,7 @@ media_player:
   - platform: firetv
     device: livingroom
     name: FireTV - Living Room
+  - platform: plex
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
