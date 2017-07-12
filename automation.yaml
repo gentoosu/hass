@@ -56,7 +56,6 @@
         - switch.dining_room_light_main_switch
     action:
       service: homeassistant.turn_off
-      service.notify: TEST
       entity_id:
         - switch.dining_room_light_other_switch
         - switch.dining_room_light_main_switch
