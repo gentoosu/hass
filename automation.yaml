@@ -132,7 +132,7 @@
   - alias: 'Notify test'
     trigger:
       platform: time
-      at: '19:53:00'
+      at: '20:01:00'
     action:
       service: notify.PB
       data_template:
