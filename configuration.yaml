@@ -104,6 +104,6 @@ notify:
     platform: pushbullet
     api_key: !secret pb_api_key
 
-alarmdecoder: !include alarmdecoder.yamlo.2kWTRaqfxtZfCBmBrT8D30ijSdCvbDlz
+alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
