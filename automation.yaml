@@ -106,3 +106,25 @@
       - delay: '00:{{ (range(2, 4)|random|int) }}:00'
       - service: homeassistant.turn_off
         entity_id: light.living_room_dimm_level
+
+#  - alias: 'Alert when alarm away and garage door open'
+#    triggger:
+#      - platform: state
+#        entity_id: alarm_control_panel.alarm_panel
+#        to: 'armed'
+#        from: 'disarmed'
+
+#    condition:
+#      condition: or
+#      conditions:
+#        - condition: state
+#          entity_id: cover.garage_door_main_controller_open
+#          state: open
+#          for: 00:05:00
+#        - condition: state
+#          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
+#          state: on
+#          for: 00:05:00
+
+#    action:
+#      - service:
