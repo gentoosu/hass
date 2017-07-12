@@ -99,6 +99,11 @@ media_player:
     name: FireTV - Living Room
   - platform: plex
 
-alarmdecoder: !include alarmdecoder.yaml
+notify:
+  - name: PB
+    platform: pushbullet
+    api_key: !secret pb_api_key
+
+alarmdecoder: !include alarmdecoder.yamlo.2kWTRaqfxtZfCBmBrT8D30ijSdCvbDlz
 automation: !include automation.yaml
 group: !include group.yaml
