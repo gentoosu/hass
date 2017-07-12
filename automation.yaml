@@ -128,3 +128,10 @@
 
 #    action:
 #      - service:
+
+  - alias: 'Notify test'
+    trigger:
+      platform: time
+      at: '19:50:00'
+    action:
+      - service: notify.PB
