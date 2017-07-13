@@ -119,11 +119,11 @@
       conditions:
         - condition: state
           entity_id: cover.garage_door_main_controller_open
-          state: open
+          state: 'open'
           for: 00:05:00
         - condition: state
           entity_id: binary_sensor.ecolink_tilt_sensor_sensor
-          state: on
+          state: 'on'
           for: 00:05:00
 
     action:
