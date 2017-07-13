@@ -107,3 +107,5 @@ notify:
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
+
+logger:
