@@ -127,9 +127,9 @@
           for: 00:05:00
 
     action:
-      service: notify.PB
-      data_template:
-        message: "Hey Jackass, check the garage!!!!"
+      - service: notify.PB
+        data_template:
+          message: "Hey Jackass, check the garage!!!!"
 
   - alias: 'Notify test'
     trigger:
