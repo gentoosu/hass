@@ -61,6 +61,7 @@ vacation_automation:
 
 alarm_zones:
   name: Alarm Zones
+  view: yes
   entities:
     - binary_sensor.bedroom_1_window
     - binary_sensor.bedroom_2_window
