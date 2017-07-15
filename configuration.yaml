@@ -96,6 +96,8 @@ cover:
 media_player:
   - platform: firetv
     device: livingroom
+    host: 10.0.0.112
+    port: 5555
     name: FireTV - Living Room
   - platform: plex
 
