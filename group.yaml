@@ -87,6 +87,7 @@ lights:
   name: Lights
   entities:
     - light.living_room_dimm_level
+    - light.master_bedroom_dimm_level
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
     - switch.garage_outside_light_switch
