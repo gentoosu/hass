@@ -85,17 +85,17 @@
       entity_id: light.living_room_dimm_level
     action:
       - service: homeassistant.turn_on
-        entity_id: light.bedroom_dimm_level
+        entity_id: light.master_bedroom_dimm_level
 
   - alias: 'Vacation - Turn Bedroom Off'
     trigger:
       platform: state
       to: 'on'
-      entity_id: light.bedroom_dimm_level
+      entity_id: light.master_bedroom_dimm_level
     action:
       - delay: '00:{{ (range(15, 45)|random|int) }}:00'
       - service: homeassistant.turn_on
-        entity_id: light.bedroom_dimm_level
+        entity_id: light.master_bedroom_dimm_level
 
   - alias: 'Delay test'
     trigger:
