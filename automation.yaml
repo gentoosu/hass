@@ -115,16 +115,17 @@
         from: 'disarmed'
 
     condition:
-      condition: or
-      conditions:
-        - condition: state
-          entity_id: cover.garage_door_main_controller_open
-          state: 'open'
-          for: 00:01:00
-        - condition: state
-          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
-          state: 'on'
-          for: 00:01:00
+#      condition: or
+#      conditions:
+      - condition: state
+        entity_id: cover.garage_door_main_controller_open
+        state: 'open'
+        for:
+          minutes: 5
+#        - platform: state
+#          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
+#          state: 'on'
+#          for: 00:01:00
 
     action:
       - service: notify.PB
@@ -133,8 +134,9 @@
 
   - alias: 'Notify test'
     trigger:
-      platform: time
-      at: '20:07:00'
+      platform: state
+      entity_id: cover.garage_door_main_controller_open
+      state: 'open'
     action:
       service: notify.PB
       data_template:
