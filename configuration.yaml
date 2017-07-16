@@ -64,27 +64,27 @@ sun:
 #      - visibility
 #      - humidity
 #      - temperature
-
-- platform: darksky
-  api_key: !secret darksky_api_key
-  monitored_conditions:
-    - icon
-    - summary
-    - precip_intensity
-    - precip_probability
-    - temperature
-    - temperature_max
-    - temperature_min
-    - wind_speed
-    - wind_bearing
-    - visibility
-    - apparent_temperature
-    - minutely_summary
-    - hourly_summary
-    - daily_summary
-    - dew_point
-    - cloud_cover
-    - humidity
+sensor:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    monitored_conditions:
+      - icon
+      - summary
+      - precip_intensity
+      - precip_probability
+      - temperature
+      - temperature_max
+      - temperature_min
+      - wind_speed
+      - wind_bearing
+      - visibility
+      - apparent_temperature
+      - minutely_summary
+      - hourly_summary
+      - daily_summary
+      - dew_point
+      - cloud_cover
+      - humidity
 
 #  - platform: speedtest
 #    server_id: !secret speedtest_server_id
