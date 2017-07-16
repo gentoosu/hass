@@ -13,7 +13,7 @@
       platform: time
       at: "23:00:00"
     action:
-      - delay: +00:{{ (range(1, 59)|random|int) }}:00'
+      - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
         entity_id: switch.garage_outside_light_switch
 
