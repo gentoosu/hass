@@ -95,7 +95,6 @@ lights:
 climate_group:
   name: Climate
   view: no
-  control: no
   entities:
     - climate.home
     - sensor.dark_sky_temperature
@@ -111,7 +110,6 @@ climate_group:
 climate_forecast:
   name: Forecast
   view: no
-  control: no
   entities:
     - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
