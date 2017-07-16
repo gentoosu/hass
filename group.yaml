@@ -91,3 +91,30 @@ lights:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
     - switch.garage_outside_light_switch
+
+climate_group:
+  name: Climate
+  view: no
+  control: no
+  entities:
+    - climate.home
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_dew_point
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_cloud_coverage
+
+climate_forecast:
+  name: Forecast
+  view: no
+  control: no
+  entities:
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_minutely_summary
+    - sensor.dark_sky_hourly_summary
+    - sensor.dark_sky_daily_summary
