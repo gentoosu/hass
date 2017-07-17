@@ -140,7 +140,7 @@ logger:
 switch:
   - platform: broadlink
     host: 10.0.0.131
-    mac: 34:EA:34:BB:10:4D
+    mac: '34:EA:34:BB:10:4D'
     switches:
       tv:
         command_on: 'JgBQAAABKJUSExITEjgTExITEhMSExITEjgTOBITEjgSORI4EjgSOBMTEjgSExITEhMTExITEhMSOBITEjkSOBI4EjgUNxI4EgAFCQABKkgUAA0FAAAAAAAAAAA'
