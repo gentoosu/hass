@@ -104,8 +104,3 @@ climate_forecast:
     - sensor.dark_sky_minutely_summary
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_daily_summary
-
-switch:
-  platform: broadlink
-  host: 10.0.0.131
-  mac: 34:EA:34:BB:10:4D
