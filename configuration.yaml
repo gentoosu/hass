@@ -135,3 +135,9 @@ logger:
   default: warn
   logs:
     homeassistant.components.automation: debug
+
+
+switch:
+  platform: broadlink
+  host: 10.0.0.131
+  mac: 34:EA:34:BB:10:4D
