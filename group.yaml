@@ -25,20 +25,6 @@ alarm:
     - sensor.alarm_panel_display
     - input_select.alarm_mode
 
-climate:
-  name: Climate
-  entities:
-    - climate.hallway
-    - sensor.hallway_thermostat_humidity
-    - sensor.hallway_thermostat_hvac_state
-    - sensor.hallway_thermostat_operation_mode
-    - sensor.hallway_thermostat_target
-    - sensor.hallway_thermostat_temperature
-    - sensor.yweather_temperature
-    - sensor.yweather_humidity
-    - sensor.yweather_current
-    - sensor.yweather_condition
-
 automation:
   name: Automation
   entities:
@@ -96,7 +82,7 @@ lights:
 
 climate_group:
   name: Climate
-  view: yes
+#  view: yes
   entities:
     - climate.home
     - sensor.dark_sky_temperature
@@ -111,7 +97,7 @@ climate_group:
 
 climate_forecast:
   name: Forecast
-  view: yes
+#  view: yes
   entities:
     - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
