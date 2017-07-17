@@ -10,6 +10,8 @@ default_view:
     - group.alarm_zones
     - group.garage_doors
     - group.lights
+    - group.climate
+    - group.forecast
 
 general:
   name: General
