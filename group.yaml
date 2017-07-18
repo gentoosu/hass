@@ -104,3 +104,8 @@ climate_forecast:
     - sensor.dark_sky_minutely_summary
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_daily_summary
+
+TV:
+  name: TV
+  entities:
+    - group.tv
