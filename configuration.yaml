@@ -141,7 +141,7 @@ switch:
     host: 10.0.0.131
     mac: '34:EA:34:BB:10:4D'
     switches:
-      tv_power:
+      tv:
         command_on: 'OAgAAUIRAhFiEWIVQhFiEWIRYhFiEWIVQhUyEWIVMhUyFUIVMhUyFUIVMhFiEWIRYhFiEXIBchFiEWIVMhUyFUIVMhUyFUIQVQFBdBkBNQAAAAA='
         command_off: 'OAgAAUIRAhFiEWIVQhFiEWIRYhFiEWIVQhUyEWIVMhUyFUIVMhUyFUIVMhFiEWIRYhFiEXIBchFiEWIVMhUyFUIVMhUyFUIQVQFBdBkBNQAAAAA='
 #      tv_volume:
