@@ -148,3 +148,17 @@ switch:
 #      tv_volume:
 #        command_on: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA'
 #        command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA'
+
+emulated_hue:
+  host_ip: 10.0.0.112
+  listen_port: 8300
+  off_maps_to_on_domains:
+    - script
+    - scene
+  expose_by_default: true
+  exposed_domains:
+    - switch
+    - scene
+    - light
+      
+  
