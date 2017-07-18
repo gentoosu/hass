@@ -12,6 +12,7 @@ default_view:
     - group.lights
     - group.climate_forecast
     - group.forecast_group
+    - group.tv
 
 general:
   name: General
