@@ -23,7 +23,9 @@
       at: "04:15:00"
     action:
       service: homeassistant.turn_on
-      entity_id: switch.garage_outside_light_switch
+      entity_id:
+        - switch.garage_outside_light_switch
+        - switch.front_door_light_switch
 
   - alias: 'Turn outside garage lighs off Morning'
     trigger:
@@ -32,7 +34,9 @@
       offset: "+00:30:00"
     action:
       service: homeassistant.turn_off
-      entity_id: switch.garage_outside_light_switch
+      entity_id:
+        - switch.garage_outside_light_switch
+        - switch.front_door_light_switch
 
   - alias: 'Dining Room Lights On'
     trigger:
