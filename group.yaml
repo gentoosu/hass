@@ -109,5 +109,4 @@ climate_forecast:
 TV:
   name: TV
   entities:
-    - group.tv
     - switch.tv
