@@ -141,7 +141,6 @@ switch:
     mac: '34:EA:34:BB:10:4D'
     switches:
       tv:
-        command_on: 'JgBQAAABK5IVEBUQFTUVEBUQFRAVERUQFTUVNRUQFTYVNRU1FTUVNhUQFRAVEBU1FREVEBUQFRAVNRU1FTYVEBU1FTUVNhU1FQAFBQABKEsSAA0FAAAAAAAAAAA='
         command_off: 'JgBQAAABK5IVEBUQFTUVEBUQFRAVERUQFTUVNRUQFTYVNRU1FTUVNhUQFRAVEBU1FREVEBUQFRAVNRU1FTYVEBU1FTUVNhU1FQAFBQABKEsSAA0FAAAAAAAAAAA='
 
 #      tv_volume:
@@ -160,11 +159,12 @@ emulated_hue:
     - scene
     - light
       
-binary_sensor:
-  - platform: template
-    sensors:
-      garage_door:
-        value_template: {%- if is_state("cover.garage_door_main_controller_open", "open") -%} 
+#binary_sensor:
+#  - platform: template
+#    sensors:
+#      garage_door:
+#        value_template: >-
+#        {%- if is_state("cover.garage_door_main_controller_open", "open") -%} 
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
