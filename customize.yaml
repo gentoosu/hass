@@ -6,3 +6,6 @@ light.master_bedroom_dimm_level:
 
 light.living_room_ceiling_dimm_level:
   emulated_hue_name: "ceiling light"
+
+group.dining_room_lights:
+  eumulated_hue_name: "dining room lights"
