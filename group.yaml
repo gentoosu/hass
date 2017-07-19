@@ -110,3 +110,9 @@ TV:
   name: TV
   entities:
     - switch.tv
+
+Dining_Room_Lights:
+  name: Dining Rooms Lights
+  entities:
+    - switch.dining_room_light_main_switch
+    - switch.dining_room_light_other_switch
