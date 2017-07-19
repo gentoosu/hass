@@ -133,6 +133,7 @@ logger:
   default: warn
   logs:
     homeassistant.components.automation: debug
+    homeassistant.components.switch.broadlink: info
 
 switch:
   - platform: broadlink
