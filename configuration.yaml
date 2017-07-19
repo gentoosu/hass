@@ -15,6 +15,8 @@ homeassistant:
 
   time_zone: America/New_York
 
+  customize: !include customize.yaml
+
 # Enables the frontend
 frontend:
 
@@ -97,8 +99,8 @@ sensor:
     host: 10.0.0.105
 
 # Text to speech
-tts:
-  platform: google
+#tts:
+#  platform: google
 
 nest:
   client_id: !secret nest_client_id
@@ -160,4 +162,3 @@ emulated_hue:
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
-customize: !include customize.yaml
