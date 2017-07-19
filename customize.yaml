@@ -1,0 +1,8 @@
+light.living_room_couch_dimm_level:
+  emulated_hue_name: "couch light"
+
+light.master_bedroom_dimm_level:
+  emulated_hue_name: "bedroom light"
+
+light.living_room_ceiling_dimm_level:
+  emulated_hue_name: "ceiling light"

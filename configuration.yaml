@@ -127,10 +127,6 @@ notify:
     platform: pushbullet
     api_key: !secret pb_api_key
 
-alarmdecoder: !include alarmdecoder.yaml
-automation: !include automation.yaml
-group: !include group.yaml
-
 logger:
   default: warn
   logs:
@@ -161,4 +157,7 @@ emulated_hue:
     - scene
     - light
       
-  
+alarmdecoder: !include alarmdecoder.yaml
+automation: !include automation.yaml
+group: !include group.yaml
+customize: !include customize.yaml
