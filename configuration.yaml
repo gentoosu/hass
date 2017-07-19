@@ -160,6 +160,12 @@ emulated_hue:
     - scene
     - light
       
+binary_sensor:
+  - platform: template
+    sensors:
+      garage_door:
+        value_template: {% if is_state("cover.garage_door_main_controller_open", "open")} 
+
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
