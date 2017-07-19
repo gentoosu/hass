@@ -123,7 +123,7 @@
 #      conditions:
       - condition: state
         entity_id: cover.garage_door_main_controller_open
-        to: 'open'
+        state: 'open'
         for:
           minutes: '5'
 #        - platform: state
