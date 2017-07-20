@@ -164,10 +164,10 @@ binary_sensor:
     cover:
       garage_door:
         value_template: >-
-          {% if cover.garage_door_main_controller_open == 'open' %}
+          {% if is_state("cover.garage_door_main_controller_open", 'open' %}
             Open
-          {% elif cover.garage_door_main_controller_open == 'closed' %}
-            Closed
+          {% elif is_state("cover.garage_door_main_controller_open", 'closed' %}
+            Closed"
           {% else %}
             n/a
           {% endif %}
