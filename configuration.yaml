@@ -168,3 +168,9 @@ emulated_hue:
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
+
+binary_sensor:
+  - platform: template
+      sensors:
+        garage_door:
+          value_template: "{{ states.cover.garage_door_main_controller_open == 'open' }}"
