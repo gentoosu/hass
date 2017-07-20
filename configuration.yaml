@@ -98,6 +98,11 @@ sensor:
   - platform: plex
     host: 10.0.0.105
 
+  - platform: template
+    sensors:
+      garage_door:
+        value_template: '{{ cover.garage_door_main_controller_open }}'
+        
 # Text to speech
 #tts:
 #  platform: google
@@ -159,11 +164,6 @@ emulated_hue:
     - scene
     - light
       
-sensor:
-  - platform: template
-    sensors:
-      garage_door:
-        value_template: '{{ cover.garage_door_main_controller_open }}'
 
 
 alarmdecoder: !include alarmdecoder.yaml
