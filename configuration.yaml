@@ -101,8 +101,8 @@ sensor:
   - platform: template
     sensors:
       garage_door:
-        value_template: '{{ states.cover.garage_door_main_controller_open }}'
-        
+        value_template: "{{ states.cover.garage_door_main_controller_open == 'open' }}"
+
 # Text to speech
 #tts:
 #  platform: google
