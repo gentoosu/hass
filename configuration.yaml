@@ -173,4 +173,4 @@ binary_sensor:
   - platform: template
     sensors:
       garage_door:
-        value_template: "{{ states.cover.garage_door_main_controller_open == 'open' }}"
+        value_template: "{% if is_state('states.cover.garage_door_main_controller_open', 'open') %}Open{% else %}Closed{% endif %}"
