@@ -161,7 +161,7 @@ emulated_hue:
       
 binary_sensor:
   - platform: template
-    sensors:
+    cover:
       garage_door:
         value_template: >-
           {% if cover.garage_door_main_controller_open == 'open' %}
@@ -170,7 +170,8 @@ binary_sensor:
             Closed
           {% else %}
             n/a
-          {% endif %} 
+          {% endif %}
+
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
