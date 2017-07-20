@@ -159,7 +159,7 @@ emulated_hue:
     - scene
     - light
       
-sensor:
+binary_sensor:
   - platform: template
     sensors:
       garage_door:
