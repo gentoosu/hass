@@ -163,7 +163,14 @@ binary_sensor:
   - platform: template
     sensors:
       garage_door:
-        value_template: "{%if cover.garage_door_main_controller_open == 'open'%}" 
+        value_template: >-
+        {% if cover.garage_door_main_controller_open == 'open' %}
+          Open
+        {% elif cover.garage_door_main_controller_open == 'closed' %}
+          Closed
+        {% else %}
+          n/a
+        {% endif %} 
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
