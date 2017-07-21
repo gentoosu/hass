@@ -158,7 +158,7 @@
     trigger:
       platform: state
       entity_id: sensor.alarm_panel_display
-      state: 'ARMED STAY'
+      state: 'ARMED ***STAY***'
       for:
         minutes: '1'
     action:
