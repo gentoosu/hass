@@ -125,12 +125,12 @@
         entity_id: sensor.garage_door2
         state: 'Open'
         for:
-          minutes: '3'
+          minutes: '5'
       - condition: state
         entity_id: alarm_control_panel.alarm_panel
         state: 'armed_home'
         for: 
-          minutes: '3'
+          minutes: '5'
 
 #        - platform: state
 #          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
