@@ -111,7 +111,7 @@
       - service: homeassistant.turn_off
         entity_id: light.living_room_dimm_level
 
-  - alias: "Garage Door Open"
+  - alias: 'Garage Door Open'
     trigger:
       - platform: state
         entity_id: alarm_control_panel.alarm_panel
