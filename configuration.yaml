@@ -41,7 +41,7 @@ updater:
 #conversation:
 
 # Enables support for tracking state changes over time.
-#history:
+history:
 
 recorder:
   purge_days: 21
@@ -52,20 +52,6 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
-#sensor:
-#  - platform: yweather
-#    woeid: !secret yweather_woeid
-#    monitored_conditions:
-#      - weather
-#      - weather_current
-#      - temp_min
-#      - temp_max
-#      - wind_speed
-#      - pressure
-#      - visibility
-#      - humidity
-#      - temperature
 sensor:
   - platform: darksky
     api_key: !secret darksky_api_key
