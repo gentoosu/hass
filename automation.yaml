@@ -111,7 +111,6 @@
       - service: homeassistant.turn_off
         entity_id: light.living_room_dimm_level
 
-  - alias: 'Alert when alarm away and garage door open'
     trigger:
       - platform: state
         entity_id: alarm_control_panel.alarm_panel
@@ -127,8 +126,8 @@
         for:
           minutes: '5'
       - condition: state
-        entity_id: alarm_control_panel.alarm_panel
-        state: 'armed_home'
+        entity_id: sensor.alarm_panel_display
+        state: 'ARMED STAY'
         for: 
           minutes: '5'
 
