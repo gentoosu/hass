@@ -164,3 +164,8 @@ binary_sensor:
     sensors:
       garage_door:
         value_template: "{% if is_state('cover.garage_door_main_controller_open', 'open') %}Open{% elif is_state('cover.garage_door_main_controller_open', 'closed') %}Closed{%else%}ERROR{% endif %}"
+
+camera:
+  platform: generic
+  still_image_url: https://maps.darksky.net/@radar,27.520,-82.561,10
+  name: Local radar
