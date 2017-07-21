@@ -96,7 +96,7 @@ sensor:
   - platform: template
     sensors:
       alarm_status:
-        value_template: "{% if is_state('sensor.alarm_panel_display', 'ARMED ***AWAY***** ALL SECURE **') or is_state('sensor.alarm_panel_display', 'ARMED ***STAY*****              ') %}Armed{% else %}Disarmed{%  endif %}"
+        value_template: "{% if is_state('sensor.alarm_panel_display', 'ARMED ***AWAY***** ALL SECURE **') or is_state('sensor.alarm_panel_display', 'ARMED ***STAY***                ') %}Armed{%else%}Disarmed{% endif %}"
 
 # Text to speech
 #tts:
