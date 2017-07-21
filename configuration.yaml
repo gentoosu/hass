@@ -105,7 +105,7 @@ sensor:
   - platform: template
     sensors:
       garage_door2:
-        value_template: "{% if states.cover.garage_door_main_controller_open == 'open') %}Open{% else %}Closed{% endif %}" 
+        value_template: "{% if (states.cover.garage_door_main_controller_open == 'open') %}Open{% else %}Closed{% endif %}" 
         
 
 # Text to speech
