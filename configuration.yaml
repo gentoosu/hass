@@ -174,3 +174,4 @@ binary_sensor:
     sensors:
       garage_door:
         value_template: "{% if is_state('states.cover.garage_door_main_controller_open', 'open') %}Open{% else %}Closed{% endif %}"
+      entity_id: states.cover.garage_door_main_controller_open
