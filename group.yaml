@@ -99,7 +99,7 @@ climate_group:
 
 climate_forecast:
   name: Forecast
-  view: no
+  view: yes
   entities:
     - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
