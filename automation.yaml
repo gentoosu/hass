@@ -145,8 +145,10 @@
   - alias: 'Notify test'
     trigger:
       platform: state
-      entity_id: cover.garage_door_main_controller_open
-      state: 'open'
+      entity_id: sensor.garage_door2
+      state: 'Open'
+      for:
+        minutes: '5'
     action:
       service: notify.PB
       data_template:
