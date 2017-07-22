@@ -14,6 +14,7 @@ default_view:
     - group.forecast_group
     - group.tv
     - camera.radar
+    - camera.front_door
 
 general:
   name: General
@@ -120,3 +121,8 @@ Dining_Room_Lights:
   entities:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
+
+Zoneminder:
+  name: Zoneminder
+  entities:
+    - camera.front_door
