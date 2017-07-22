@@ -117,6 +117,9 @@
         entity_id: sensor.alarm_status
         to: 'Armed'
         from: 'Disarmed'
+      - platform: state
+        entity_id: sensor.garage_door2
+        to: 'Open'
 
     condition:
       condition: and
