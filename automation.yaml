@@ -117,7 +117,7 @@
         entity_id: sensor.alarm_status
         to: 'Armed'
         for: 
-          minutes: '2'
+          minutes: '5'
 
     condition:
 #      condition: and
