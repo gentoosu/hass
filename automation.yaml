@@ -116,25 +116,15 @@
       - platform: state
         entity_id: sensor.alarm_status
         to: 'Armed'
-        from: 'Disarmed'
-      - platform: state
-        entity_id: sensor.garage_door2
-        to: 'Open'
+        for: 
+          minutes: '2'
 
     condition:
-      condition: and
+#      condition: and
       conditions:
       - condition: state
         entity_id: sensor.garage_door2
         state: 'Open'
-        for: '00:02:00'
-#          minutes: '2'
-      - condition: state
-        entity_id: sensor.alarm_status
-        state: 'Armed'
-#        for: 
-#          minutes: '5'
-
 #        - platform: state
 #          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
 #          state: 'on'
