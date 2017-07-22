@@ -137,4 +137,5 @@
     action:
       - service: homeassistant.turn_on
         entity_id: light.living_room_couch_dimm_level
+
         
