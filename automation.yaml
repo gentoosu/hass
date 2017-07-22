@@ -127,8 +127,8 @@
         for:
           minutes: '5'
       - condition: state
-        entity_id: sensor.alarm_panel_display
-        state: 'ARMED STAY'
+        entity_id: sensor.alarm_status
+        state: 'Armed'
         for: 
           minutes: '5'
 
