@@ -114,9 +114,9 @@
   - alias: 'Garage Door Open'
     trigger:
       - platform: state
-        entity_id: alarm_control_panel.alarm_panel
-        to: 'armed_home'
-        from: 'disarmed'
+        entity_id: sensor.alarm_status
+        to: 'Armed'
+        from: 'Disarmed'
 
     condition:
       condition: and
