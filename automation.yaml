@@ -123,12 +123,12 @@
       conditions:
       - condition: state
         entity_id: sensor.garage_door2
-        to: 'Open'
-        for:
-          minutes: '5'
+        state: 'Open'
+        for: '00:02:00'
+#          minutes: '2'
       - condition: state
         entity_id: sensor.alarm_status
-        to: 'Armed'
+        state: 'Armed'
 #        for: 
 #          minutes: '5'
 
