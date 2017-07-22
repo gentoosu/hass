@@ -120,15 +120,14 @@
           minutes: '5'
 
     condition:
-#      condition: and
-#      conditions:
+      condition: or
+      conditions:
       - condition: state
         entity_id: sensor.garage_door2
         state: 'Open'
-#        - platform: state
-#          entity_id: binary_sensor.ecolink_tilt_sensor_sensor
-#          state: 'on'
-#          for: 00:01:00
+      - condition: state
+        entity_id: binary_sensor.ecolink_tilt_sensor_sensor
+        state: 'on'
 
     action:
       - service: notify.PB
