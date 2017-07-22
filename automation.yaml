@@ -153,15 +153,3 @@
       service: notify.PB
       data_template:
         message: "test GD message"
-
-  - alias: 'Notify Alarm test'
-    trigger:
-      platform: state
-      entity_id: sensor.alarm_panel_display
-      state: 'ARMED ***STAY***                '
-      for:
-        minutes: '1'
-    action:
-      service: notify.PB
-      data_template:
-        message: "test Alarm message"
