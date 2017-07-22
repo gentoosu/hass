@@ -168,5 +168,7 @@ camera:
   still_image_url: https://maps.darksky.net/@radar,27.520,-82.561,10
   name: radar
 
+  platform: zoneminder
+  
 zoneminder:
   host: 10.0.0.105
