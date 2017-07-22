@@ -124,8 +124,8 @@
       - condition: state
         entity_id: sensor.garage_door2
         to: 'Open'
-        for: '00:05:00'
-#          minutes: '5'
+        for:
+          minutes: '5'
       - condition: state
         entity_id: sensor.alarm_status
         to: 'Armed'
