@@ -112,7 +112,6 @@
         to: 'Armed'
         for: 
           minutes: '5'
-
     condition:
       condition: or
       conditions:
@@ -122,9 +121,19 @@
       - condition: state
         entity_id: binary_sensor.ecolink_tilt_sensor_sensor
         state: 'on'
-
     action:
       - service: notify.PB
         data_template:
           message: "Hey Jackass, check the garage!!!!"
 
+- alias: 'Turn on lights when home after sunset'
+    trigger:
+      - platform: state
+        entity_id: sensor.alarm_status
+        to: 'Disarmed'
+    condition:
+      - condition: sun
+        after: sunset
+    action:
+      - service: homeassistant.turn_on
+        entity_id: light.living_room_couch_dimm_level
