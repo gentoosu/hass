@@ -164,11 +164,11 @@ automation: !include automation.yaml
 group: !include group.yaml
 
 camera:
-  platform: generic
-  still_image_url: https://maps.darksky.net/@radar,27.520,-82.561,10
-  name: radar
+  - platform: generic
+    still_image_url: https://maps.darksky.net/@radar,27.520,-82.561,10
+    name: radar
 
-  platform: zoneminder
-  
+  - platform: zoneminder
+
 zoneminder:
   host: 10.0.0.105
