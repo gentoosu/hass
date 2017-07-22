@@ -142,7 +142,7 @@
         data_template:
           message: "Hey Jackass, check the garage!!!!"
 
-  - alias: 'Notify test'
+  - alias: 'Notify GD test'
     trigger:
       platform: state
       entity_id: sensor.garage_door2
@@ -152,4 +152,16 @@
     action:
       service: notify.PB
       data_template:
-        message: "test message"
+        message: "test GD message"
+
+  - alias: 'Notify Alarm test'
+    trigger:
+      platform: state
+      entity_id: sensor.alarm_panel_display
+      state: 'ARMED ***STAY***                '
+      for:
+        minutes: '1'
+    action:
+      service: notify.PB
+      data_template:
+        message: "test Alarm message"

@@ -37,8 +37,9 @@ automation:
     - automation.turn_outside_garage_lighs_off_morning
     - automation.turn_outside_garage_lights_on_evening
     - automation.turn_outside_garage_lights_off_evening
-    - automation.alert_when_alarm_away_and_garage_door_open
-    - automation.notify_test
+    - automation.garage_door_open
+    - automation.notify_gd_test
+    - automation.notify_alarm_test
 
 vacation_automation:
   name: Vacation Automation
