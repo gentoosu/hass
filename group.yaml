@@ -124,5 +124,6 @@ Dining_Room_Lights:
 
 Zoneminder:
   name: Zoneminder
+  view: yes
   entities:
     - camera.front_door
