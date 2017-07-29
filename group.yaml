@@ -127,3 +127,4 @@ Zoneminder:
   view: yes
   entities:
     - camera.front_door
+    - camera.driveway
