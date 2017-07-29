@@ -15,6 +15,7 @@ default_view:
     - group.tv
     - camera.radar
     - camera.front_door
+    - camera.driveway
 
 general:
   name: General
