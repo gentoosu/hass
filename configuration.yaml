@@ -171,4 +171,4 @@ camera:
   - platform: zoneminder
 
 zoneminder:
-  host: 10.0.0.105
+  host: 10.0.0.106
