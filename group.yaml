@@ -13,9 +13,6 @@ default_view:
     - group.climate_forecast
     - group.forecast_group
     - group.tv
-    - camera.radar
-    - camera.front_door
-    - camera.driveway
 
 general:
   name: General
