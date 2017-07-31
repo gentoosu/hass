@@ -33,10 +33,10 @@ automation:
   entities:
     - automation.dining_room_lights_on
     - automation.dining_room_lights_off
-    - automation.turn_outside_garage_lights_on_morning
-    - automation.turn_outside_garage_lighs_off_morning
+    - automation.turn_front_door_light_on_morning
+    - automation.turn_front_door_light_off_morning
     - automation.turn_outside_garage_lights_on_evening
-    - automation.turn_outside_garage_lights_off_evening
+    - automation.turn_outside_garage_lights_off_morning
     - automation.garage_door_open
     - automation.notify_gd_test
     - automation.notify_alarm_test
