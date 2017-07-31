@@ -34,7 +34,7 @@
       entity_id:
         - switch.front_door_light_switch
 
-  - alias: 'Turn outside lighs off Morning'
+  - alias: 'Turn front door light off Morning'
     trigger:
       platform: sun
       event: sunrise
