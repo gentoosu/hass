@@ -123,10 +123,10 @@
       conditions:
       - condition: state
         entity_id: sensor.garage_door2
-        to: 'Open'
+        state: 'Open'
       - condition: state
         entity_id: binary_sensor.ecolink_tilt_sensor_sensor
-        to: 'on'
+        state: 'on'
     action:
       - service: notify.PB
         data_template:
