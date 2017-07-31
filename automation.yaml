@@ -8,16 +8,16 @@
       - service: homeassistant.turn_on
         entity_id: switch.garage_outside_light_switch
 
-  - alias: 'Turn outside garage lights off evening'
+  - alias: 'Turn outside garage lights off morning'
     trigger:
-      platform: time
-      at: "23:00:00"
+      platform: sun
+      at: sunrise
     action:
-      - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
+      - delay: '+00:{{ (range(1, 30)|random|int) }}:00'
       - service: homeassistant.turn_off
         entity_id: switch.garage_outside_light_switch
 
-  - alias: 'Turn outside garage lights on Morning'
+  - alias: 'Turn front door light on Morning'
     trigger:
       platform: time
       at: "04:15:00"
@@ -32,10 +32,9 @@
     action:
       service: homeassistant.turn_on
       entity_id:
-        - switch.garage_outside_light_switch
         - switch.front_door_light_switch
 
-  - alias: 'Turn outside garage lighs off Morning'
+  - alias: 'Turn outside lighs off Morning'
     trigger:
       platform: sun
       event: sunrise
@@ -43,7 +42,6 @@
     action:
       service: homeassistant.turn_off
       entity_id:
-        - switch.garage_outside_light_switch
         - switch.front_door_light_switch
 
   - alias: 'Dining Room Lights On'
