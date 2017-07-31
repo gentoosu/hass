@@ -11,7 +11,7 @@
   - alias: 'Turn outside garage lights off morning'
     trigger:
       platform: sun
-      at: sunrise
+      event: sunrise
     action:
       - delay: '+00:{{ (range(1, 30)|random|int) }}:00'
       - service: homeassistant.turn_off
