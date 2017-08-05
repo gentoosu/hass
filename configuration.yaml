@@ -28,8 +28,8 @@ http:
   api_password: !secret http_api_password
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
-  ssl_certificate: !secret http_ssl_certificate
-  ssl_key: !secret http_ssl_key 
+  #ssl_certificate: !secret http_ssl_certificate
+  #ssl_key: !secret http_ssl_key 
 
 # Checks for available updates
 updater:
@@ -148,7 +148,7 @@ switch:
         command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA='
 
 emulated_hue:
-  host_ip: 10.0.0.112
+  host_ip: 10.0.0.106
   listen_port: 8300
   off_maps_to_on_domains:
     - script
