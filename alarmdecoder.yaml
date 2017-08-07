@@ -1,6 +1,6 @@
   device:
     type: socket
-    host: 10.0.0.112
+    host: 10.0.0.130
     port: 10000
   panel_display: On
   zones:
