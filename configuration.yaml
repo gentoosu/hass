@@ -120,7 +120,7 @@ media_player:
   - platform: firetv
     device: livingroom
     host: 10.0.0.108
-    port: 5555
+    port: 5556
     name: FireTV - Living Room
   - platform: plex
 
@@ -172,3 +172,5 @@ camera:
 
 zoneminder:
   host: 10.0.0.106
+
+influxdb:
