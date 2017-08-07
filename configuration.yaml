@@ -45,6 +45,8 @@ history:
 
 recorder:
   purge_days: 21
+  db_url: !secret recorder_db_url
+
   
 # View all events in a logbook
 logbook:
