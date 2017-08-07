@@ -111,7 +111,7 @@ climate:
 
 zwave:
   usb_path: /dev/ttyACM0
-  config_path: /usr/local/lib/python3.4/dist-packages/libopenzwave-0.3.2-py3.4-linux-armv7l.egg/config 
+#  config_path: /usr/local/lib/python3.4/dist-packages/libopenzwave-0.3.2-py3.4-linux-armv7l.egg/config 
 
 cover:
   platform: zwave
@@ -119,7 +119,7 @@ cover:
 media_player:
   - platform: firetv
     device: livingroom
-    host: 10.0.0.112
+    host: 10.0.0.108
     port: 5555
     name: FireTV - Living Room
   - platform: plex
