@@ -143,5 +143,14 @@
     action:
       - service: homeassistant.turn_on
         entity_id: light.living_room_couch_dimm_level
-
-        
+  
+  - alias: 'Notify FireTV when driveway camera records'
+    trigger:
+      - platform: state
+        entity_id: camera.driveway
+        to: 'recording'
+    action:
+      - service: notify.Vizio
+        data_template:
+          message: "Something is moving in the driveway"
+            
