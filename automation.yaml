@@ -147,8 +147,8 @@
   - alias: 'Notify FireTV when driveway camera records'
     trigger:
       - platform: state
-        entity_id: camera.driveway
-        to: 'recording'
+        entity_id: light.living_room_dimm_level
+        to: 'on'
     action:
       - service: notify.Vizio
         data_template:
