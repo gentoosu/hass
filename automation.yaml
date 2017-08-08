@@ -151,6 +151,6 @@
         to: 'on'
     action:
       - service: notify.Vizio
-        data_template:
+        data:
           message: "Something is moving in the driveway"
             
