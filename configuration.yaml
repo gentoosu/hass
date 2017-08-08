@@ -131,9 +131,10 @@ notify:
     platform: pushbullet
     api_key: !secret pb_api_key
 
-  - name: Vizio
-    platform: nfandroidtv
+  - platform: nfandroidtv
+    name: Vizio
     host: 10.0.0.108
+    duration: 4
 
 logger:
   default: warn
