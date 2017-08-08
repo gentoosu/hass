@@ -152,5 +152,6 @@
     action:
       - service: notify.Vizio
         data:
+          title: "Home Assistant"
           message: "Something is moving in the driveway"
             
