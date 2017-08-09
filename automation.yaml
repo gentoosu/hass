@@ -147,11 +147,21 @@
   - alias: 'Notify FireTV when driveway camera records'
     trigger:
       - platform: state
-        entity_id: light.master_bedroom_dimm_level
+        entity_id: camera.driveway
         to: 'on'
     action:
       - service: notify.Vizio
         data:
           title: "Home Assistant"
-          message: "Something is moving in the driveway"
+          message: "Driveway activity detected"
             
+  - alias: 'Notify FireTV when front door camera records'
+    trigger:
+      - platform: state
+        entity_id: camera.front_door
+        to: 'on'
+    action:
+      - service: notify.Vizio
+        data:
+          title: "Home Assistant"
+          message: "Front Door activity detected"
