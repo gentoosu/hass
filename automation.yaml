@@ -148,7 +148,7 @@
     trigger:
       - platform: state
         entity_id: camera.driveway
-        to: 'on'
+        to: 'recording'
     action:
       - service: notify.Vizio
         data:
@@ -159,7 +159,7 @@
     trigger:
       - platform: state
         entity_id: camera.front_door
-        to: 'on'
+        to: 'recording'
     action:
       - service: notify.Vizio
         data:
