@@ -194,4 +194,4 @@
         entity_id: light.living_room_ceiling_dimm_level
         #entity_id: light.living_room_couch_dimm_level
         data:
-          brightness: 128
+          brightness: 25
