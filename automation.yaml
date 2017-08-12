@@ -183,10 +183,10 @@
     condition:
       condition: and
       conditions:
-      - condition: state
+        - condition: state
           entity_id: light.living_room_dimm_level
           state: 'off'
-      - condition: state
+        - condition: state
           entity_id: light.living_room_couch_dimm_level
           state: 'off'
     action:
