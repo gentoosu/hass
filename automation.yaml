@@ -198,6 +198,6 @@
         data:
           brightness: 10
       - service: homeassistant.turn_on
-        entity_id: light.living_room_couch_dimm_level
+        entity_id: light.living_room_ceiling_dimm_level
         data:
           brightness: 10
