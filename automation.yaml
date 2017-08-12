@@ -197,7 +197,7 @@
         entity_id: light.living_room_ceiling_dimm_level
         data:
           brightness: 15
-      - service:   
+      - service: homeassistant.turn_on
         entity_id: light.living_room_couch_dimm_level
         data:
           brightness: 15
