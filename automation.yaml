@@ -184,13 +184,12 @@
       condition: and
       conditions:
       - condition: state
-          state: 'off'
           entity_id: light.living_room_dimm_level
-      - condition: state
           state: 'off'
+      - condition: state
           entity_id: light.living_room_couch_dimm_level
+          state: 'off'
     action:
       - service: homeassistant.turn_on
         entity_id: light.living_room_couch_dimm_level
         #entity_id: light.living_room_couch_dimm_level
-        brightness: 30
