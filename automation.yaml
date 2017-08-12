@@ -184,7 +184,7 @@
       condition: and
       conditions:
         - condition: state
-          entity_id: light.living_room_dimm_level
+          entity_id: light.living_room_ceiling_dimm_level
           state: 'off'
         - condition: state
           entity_id: light.living_room_couch_dimm_level
