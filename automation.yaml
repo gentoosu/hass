@@ -191,6 +191,6 @@
           state: 'off'
     action:
       - service: homeassistant.turn_on
-        entity_id: light.living_room_couch_dimm_level
+        entity_id: light.living_room_ceiling_dimm_level
         #entity_id: light.living_room_couch_dimm_level
-        brightness: 255
+        brightness: 128
