@@ -77,6 +77,7 @@ lights:
     - light.living_room_ceiling_dimm_level
     - light.living_room_couch_dimm_level
     - light.master_bedroom_dimm_level
+    - light.kitchen_ceiling_dimm_level
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
     - switch.garage_outside_light_switch
