@@ -189,9 +189,9 @@
         - condition: state
           entity_id: light.kitchen_ceiling_dimm_level
           state: 'off'
-#        - condition: time
-#          after: '22:00:00'
-#          before: '06:00:00'
+        - condition: time
+          after: '22:00:00'
+          before: '06:00:00'
     action:
       - service: homeassistant.turn_on
         entity_id: light.kitchen_ceiling_dimm_level
