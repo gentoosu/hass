@@ -196,11 +196,11 @@
       - service: homeassistant.turn_on
         entity_id: light.kitchen_ceiling_dimm_level
         data:
-          brightness: 20
+          brightness: 10
       - service: homeassistant.turn_on
         entity_id: light.living_room_ceiling_dimm_level
         data:
-          brightness: 20
+          brightness: 10
       - delay: 00:01:00
       - service: homeassistant.turn_off
         entity_id: 
