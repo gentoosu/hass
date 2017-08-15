@@ -191,18 +191,18 @@
           state: 'off'
         - condition: time
           after: '22:00:00'
-          before: '06:00:00'
+          before: '06:45:00'
     action:
       - service: homeassistant.turn_on
         entity_id: light.kitchen_ceiling_dimm_level
         data:
           brightness: 5
-      - service: homeassistant.turn_on
-        entity_id: light.living_room_ceiling_dimm_level
-        data:
+#      - service: homeassistant.turn_on
+#        entity_id: light.living_room_ceiling_dimm_level
+#        data:
           brightness: 5
-      - delay: 00:01:00
+      - delay: 00:02:00
       - service: homeassistant.turn_off
         entity_id: 
           - light.kitchen_ceiling_dimm_level
-          - light.living_room_ceiling_dimm_level
+#          - light.living_room_ceiling_dimm_level
