@@ -86,7 +86,7 @@
     action:
       - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_on
-        entity_id: light.living_room_dimm_level
+        entity_id: light.living_room_ceiling_dimm_level
 
   - alias: 'Vacation - Turn living rooms lights off Evening'
     initial_state: False
@@ -96,14 +96,14 @@
     action:
       - delay: '01:{{ (range(1, 59)|random|int) }}:00'
       - service: homeassistant.turn_off
-        entity_id: light.living_room_dimm_level
+        entity_id: light.living_room_ceiling_dimm_level
 
   - alias: 'Vacation - Turn Bedroom On after Living Room off'
     initial_state: False
     trigger:
       platform: state
       to: 'off'
-      entity_id: light.living_room_dimm_level
+      entity_id: light.living_room_ceiling_dimm_level
     action:
       - service: homeassistant.turn_on
         entity_id: light.master_bedroom_dimm_level
