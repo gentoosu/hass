@@ -119,8 +119,8 @@ zwave:
     light:
       polling_intensity: 1
       refresh_value: true
-      delay: 5
-      
+      delay: 3
+
 cover:
   platform: zwave
 
@@ -148,6 +148,7 @@ logger:
   logs:
     homeassistant.components.automation: debug
     homeassistant.components.switch.broadlink: info
+    homeassistant.components.alarmdecoder: debug
 
 switch:
   - platform: broadlink
