@@ -130,10 +130,10 @@
       condition: or
       conditions:
       - condition: state
-        entity_id: sensor.garage_door2
-        state: 'Open'
+        entity_id: binary_sensor.main_garage_tilt_sensor
+        state: 'on'
       - condition: state
-        entity_id: binary_sensor.ecolink_tilt_sensor_sensor
+        entity_id: binary_sensor.second_garage_tilt_sensor
         state: 'on'
     action:
       - service: notify.PB
