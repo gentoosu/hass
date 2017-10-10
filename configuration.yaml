@@ -150,6 +150,7 @@ logger:
     homeassistant.components.automation: debug
     homeassistant.components.switch.broadlink: info
     homeassistant.components.alarmdecoder: debug
+    homeassistant.components.alarm_decoder: debug
 
 switch:
   - platform: broadlink
