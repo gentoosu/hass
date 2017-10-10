@@ -151,7 +151,8 @@ logger:
     homeassistant.components.switch.broadlink: info
     homeassistant.components.alarmdecoder: debug
     homeassistant.components.alarm_decoder: debug
-
+    homeassistant.components.alarm_control_panel: debug
+    
 switch:
   - platform: broadlink
     host: 10.0.0.131
