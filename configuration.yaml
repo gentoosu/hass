@@ -166,9 +166,9 @@ switch:
         command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA='
 
 emulated_hue:
-  type: alexa
+#  type: alexa
   host_ip: 10.0.0.106
-  listen_port: 8300
+  listen_port: 80
   off_maps_to_on_domains:
     - script
     - scene
