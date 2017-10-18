@@ -190,6 +190,6 @@ camera:
   - platform: zoneminder
 
 zoneminder:
-  host: 10.0.0.106
+  host: 10.0.0.118
 
 influxdb:
