@@ -69,8 +69,8 @@ alarm_zones:
 garage_doors:
   name: Garage Doors
   entities:
-    - cover.garage_door_main_controller_open
-    - binary_sensor.ecolink_tilt_sensor_sensor
+    - binary_sensor.main_garage_tilt_sensor
+    - binary_sensor.second_garage_tilt_sensor
 
 lights:
   name: Lights
@@ -126,9 +126,3 @@ Zoneminder:
   entities:
     - camera.front_door
     - camera.driveway
-
-Garage Doors:
-  name: Garage Doors
-  entities:
-    - binary_sensor.main_garage_tilt_sensor
-    - binary_sensor.second_garage_tilt_sensor
