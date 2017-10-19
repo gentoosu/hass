@@ -125,3 +125,9 @@ Zoneminder:
   entities:
     - camera.front_door
     - camera.driveway
+
+Garage Doors:
+  name: Garage Doors
+  entities:
+    - binary_sensor.main_garage_tilt_sensor
+    - binary_sensor.second_garage_tilt_sensor
