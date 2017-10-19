@@ -168,7 +168,7 @@ switch:
 emulated_hue:
 #  type: alexa
   host_ip: 10.0.0.106
-  listen_port: 80
+#  listen_port: 80
   off_maps_to_on_domains:
     - script
     - scene
