@@ -193,3 +193,4 @@ zoneminder:
   host: 10.0.0.118
 
 influxdb:
+  host: 10.0.0.123
