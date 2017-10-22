@@ -194,3 +194,13 @@ zoneminder:
 
 influxdb:
   host: 10.0.0.123
+
+google_assistant:
+  project_id: someproject-2d0b8
+  client_id: !secret google_assistant_client_id
+  access_token: !secret google_assistant_access_token
+  expose_by_default: true
+  exposed_domains:
+    - switch
+    - scene
+    - light
