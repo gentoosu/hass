@@ -145,7 +145,7 @@ notify:
     position: center
 
 logger:
-  default: warn
+  default: info
   logs:
     homeassistant.components.automation: debug
     homeassistant.components.switch.broadlink: info
@@ -165,18 +165,17 @@ switch:
         command_on: 'JgBYAAABKZMTExMSEzcUERMSExITEhQSEzcUNhMSEzgUNhM3EzgTNxQREzcUERQSExIUERQRExITOBQRFDYUNhQ3FDYUNhQ2FAAFBwABKUoUAAxHAAEpShMADQU='
         command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA='
 
-emulated_hue:
+#emulated_hue:
 #  type: alexa
-  host_ip: 10.0.0.110
-#  listen_port: 80
-  off_maps_to_on_domains:
-    - script
-    - scene
-  expose_by_default: true
-  exposed_domains:
-    - switch
-    - scene
-    - light
+#  host_ip: 10.0.0.110
+#  off_maps_to_on_domains:
+#    - script
+#    - scene
+#  expose_by_default: true
+#  exposed_domains:
+#    - switch
+#    - scene
+#    - light
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
