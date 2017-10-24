@@ -19,23 +19,21 @@ homeassistant:
 
 map:
 
-zone 1:
-  name: Home
-  latitude: !secret home_lat
-  longitude: !secret home_long
-  radius: 100
+zone:
+  - name: Home
+    latitude: !secret home_lat
+    longitude: !secret home_long
+    radius: 100
 
-zone 2:
-  name: Gym
-  latitude: !secret gym_lat
-  logitude: !secret gym_long
-  radius: 100
+  - name: Gym
+    latitude: !secret gym_lat
+    logitude: !secret gym_long
+    radius: 100
 
-zone 3:
-  name: Clinic
-  latitude: !secret clinic_lat
-  longitude: !secret clinic_long
-  radius: 100
+  - name: Clinic
+    latitude: !secret clinic_lat
+    longitude: !secret clinic_long
+    radius: 100
 
 # Enables the frontend
 frontend:
