@@ -14,6 +14,7 @@ default_view:
     - group.forecast_group
     - group.tv
     - group.garage_doors
+    - group.owntracks
 
 general:
   name: General
@@ -126,3 +127,9 @@ Zoneminder:
   entities:
     - camera.front_door
     - camera.driveway
+
+Owntracks:
+  name: Owntracks
+  view: yes
+  entities:
+    - device_tracker.mike_android
