@@ -132,3 +132,4 @@ Owntracks:
   name: Owntracks
   entities:
     - device_tracker.mike_android
+    - device_tracker.amy_phone
