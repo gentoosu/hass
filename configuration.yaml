@@ -27,7 +27,7 @@ zone:
 
   - name: Gym
     latitude: !secret gym_lat
-    logitude: !secret gym_long
+    longitude: !secret gym_long
     radius: 100
 
   - name: Clinic
