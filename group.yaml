@@ -130,6 +130,5 @@ Zoneminder:
 
 Owntracks:
   name: Owntracks
-  view: yes
   entities:
     - device_tracker.mike_android
