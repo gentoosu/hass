@@ -203,3 +203,6 @@ google_assistant:
     - switch
     - scene
     - light
+
+device_tracker:
+  - platform: owntracks_http
