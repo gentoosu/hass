@@ -224,3 +224,4 @@ google_assistant:
 
 device_tracker:
   - platform: owntracks_http
+  - platform: locative
