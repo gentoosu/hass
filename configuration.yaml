@@ -225,3 +225,6 @@ google_assistant:
 device_tracker:
   - platform: owntracks_http
   - platform: locative
+  - platform: nmap_tracker
+    hosts:
+      - 10.0.0.1/24
