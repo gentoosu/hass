@@ -162,14 +162,17 @@ notify:
     duration: 8
     position: center
 
+service: logger.set_level
+data:
+  homeassistant.components: debug
 logger:
   default: debug
-  logs:
-    homeassistant.components.automation: debug
-    homeassistant.components.switch.broadlink: info
-    homeassistant.components.alarmdecoder: debug
-    homeassistant.components.alarm_decoder: debug
-    homeassistant.components.alarm_control_panel: debug
+  #logs:
+    #homeassistant.components.automation: debug
+    #homeassistant.components.switch.broadlink: info
+    #homeassistant.components.alarmdecoder: debug
+    #homeassistant.components.alarm_decoder: debug
+    #homeassistant.components.alarm_control_panel: debug
     
 switch:
   - platform: broadlink
