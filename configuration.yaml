@@ -163,7 +163,7 @@ notify:
     position: center
 
 logger:
-  default: info
+  default: debug
   logs:
     homeassistant.components.automation: debug
     homeassistant.components.switch.broadlink: info
