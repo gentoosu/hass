@@ -159,7 +159,7 @@ notify:
   - platform: nfandroidtv
     name: Vizio
     host: 10.0.0.108
-    duration: 8
+    duration: 6
     position: center
 
 logger:
