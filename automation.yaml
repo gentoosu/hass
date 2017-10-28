@@ -138,7 +138,23 @@
     action:
       - service: notify.PB
         data_template:
-          message: "Hey Jackass, check the garage!!!!"
+          message: "A garage door is still open!!!!"
+
+  - alias: 'Notify: Alarm Not Set'
+    trigger:
+      - platform: state
+        entity_id: sensor.anyone_home
+        to: 'not_home'
+        for: 
+          minutes: '5'
+    condition:
+      - condition: state
+        entity_id: sensor.alarm_status
+        state: 'Disarmed'
+    action:
+      - service: notify.PB
+        data_template:
+          message: "You did not set the alarm!!!!"
 
   - alias: 'Turn on lights when home after sunset'
     trigger:
