@@ -167,12 +167,12 @@ data:
   homeassistant.components: debug
 logger:
   default: debug
-  #logs:
+  logs:
     #homeassistant.components.automation: debug
     #homeassistant.components.switch.broadlink: info
-    #homeassistant.components.alarmdecoder: debug
-    #homeassistant.components.alarm_decoder: debug
-    #homeassistant.components.alarm_control_panel: debug
+    homeassistant.components.alarmdecoder: debug
+    homeassistant.components.alarm_decoder: debug
+    homeassistant.components.alarm_control_panel: debug
     
 switch:
   - platform: broadlink
