@@ -107,7 +107,7 @@ sensor:
   - platform: template
     sensors:
       anyone_home:
-        value_template: "{% if is_state('device_tracker.mike_android', 'home') or is_state('device_tracker.84ac0ddb496b49c7ab4f427dbb271c72', 'home')-%}{% endif %}"
+        value_template: "{% if is_state('device_tracker.mike_android', 'home') or is_state('device_tracker.84ac0ddb496b49c7ab4f427dbb271c72', 'home')-%}home{%else%}not_home{% endif %}"
 
   - platform: template
     sensors:
