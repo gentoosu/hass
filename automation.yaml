@@ -119,7 +119,7 @@
       - service: homeassistant.turn_off
         entity_id: light.master_bedroom_dimm_level
 
-  - alias: 'Garage Door Open'
+  - alias: 'Notify: Garage Door Open'
     trigger:
       - platform: state
         entity_id: sensor.alarm_status
