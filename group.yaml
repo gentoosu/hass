@@ -131,5 +131,5 @@ Zoneminder:
 Owntracks:
   name: Device Tracker
   entities:
-    - device_tracker.mike_android
+    - device_tracker.04157df488e6bc01
     - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
