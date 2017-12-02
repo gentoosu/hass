@@ -201,21 +201,10 @@ switch:
         turn_off:
           service: script.bedtime
 
-#emulated_hue:
-#  type: alexa
-#  host_ip: 10.0.0.110
-#  off_maps_to_on_domains:
-#    - script
-#    - scene
-#  expose_by_default: true
-#  exposed_domains:
-#    - switch
-#    - scene
-#    - light
-
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
+script: !include script.yaml
 
 camera:
   - platform: generic
