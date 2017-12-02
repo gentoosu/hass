@@ -231,6 +231,7 @@ google_assistant:
     - switch
     - scene
     - light
+    - script
 
 device_tracker:
   - platform: gpslogger
