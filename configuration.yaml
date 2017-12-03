@@ -192,6 +192,7 @@ switch:
       volume:
         command_on: 'JgBYAAABKZMTExMSEzcUERMSExITEhQSEzcUNhMSEzgUNhM3EzgTNxQREzcUERQSExIUERQRExITOBQRFDYUNhQ3FDYUNhQ2FAAFBwABKUoUAAxHAAEpShMADQU='
         command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA='
+  
   - platform: template
     switches:
       bedtime:
@@ -200,6 +201,9 @@ switch:
           service: script.bedtime
         turn_off:
           service: script.bedtime
+
+  - platform: rachio
+    access_token: !secret rachio_access_token
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
@@ -235,6 +239,4 @@ google_assistant:
 device_tracker:
   - platform: gpslogger
   - platform: locative
-
-
 
