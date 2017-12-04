@@ -37,6 +37,7 @@ zone:
 
 # Enables the frontend
 frontend:
+  javascript_version: latest
 
 # Enables configuration UI
 config:
@@ -164,7 +165,7 @@ notify:
   - platform: nfandroidtv
     name: Vizio
     host: 10.0.0.108
-    duration: 8
+    duration: 6
     position: center
 
 #service: logger.set_level
@@ -191,22 +192,23 @@ switch:
       volume:
         command_on: 'JgBYAAABKZMTExMSEzcUERMSExITEhQSEzcUNhMSEzgUNhM3EzgTNxQREzcUERQSExIUERQRExITOBQRFDYUNhQ3FDYUNhQ2FAAFBwABKUoUAAxHAAEpShMADQU='
         command_off: 'JgBQAAABKZMTEhMSEzgTEhMSExITEhMSEzgTNxMSEzcTOBM3EzcTNxMSEzgTEhMSExITEhMSExIUNxMSEzcTNxM4EzcTNxM3EwAFCAABKEoTAA0FAAAAAAAAAAA='
+  
+  - platform: template
+    switches:
+      bedtime:
+        value_template: "{{ is_state('switch.bedtime', 'on')}}"
+        turn_on:
+          service: script.bedtime
+        turn_off:
+          service: script.bedtime
 
-#emulated_hue:
-#  type: alexa
-#  host_ip: 10.0.0.110
-#  off_maps_to_on_domains:
-#    - script
-#    - scene
-#  expose_by_default: true
-#  exposed_domains:
-#    - switch
-#    - scene
-#    - light
+  - platform: rachio
+    access_token: !secret rachio_access_token
 
 alarmdecoder: !include alarmdecoder.yaml
 automation: !include automation.yaml
 group: !include group.yaml
+script: !include script.yaml
 
 camera:
   - platform: generic
@@ -225,19 +227,22 @@ google_assistant:
   project_id: !secret google_assistant_project_id
   client_id: !secret google_assistant_client_id
   access_token: !secret google_assistant_access_token
-  expose_by_default: true
+  agent_user_id: !secret google_assistant_agent_user_id
+  api_key: !secret google_assistant_api_key
+  #expose_by_default: true
   exposed_domains:
     - switch
     - scene
     - light
+    - script
 
 device_tracker:
-  - platform: owntracks_http
+  - platform: gpslogger
   - platform: locative
-  - platform: nmap_tracker
-    hosts:
-      - 10.0.0.1/24
-    exclude:
-      - 10.0.0.110
-      - 10.0.0.1
-      - 10.0.0.255
+
+panel_iframe:
+  rachio:
+    title: Rachio
+    url: "https://app.rach.io"
+    icon: mdi:water-pump
+

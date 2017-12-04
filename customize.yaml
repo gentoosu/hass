@@ -1,14 +1,14 @@
 light.living_room_couch_dimm_level:
-  emulated_hue_name: "couch light"
+  google_assistant_name: "couch light"
 
 light.master_bedroom_dimm_level:
-  emulated_hue_name: "bedroom light"
+  google_assistant_name: "bedroom light"
 
 light.living_room_ceiling_dimm_level:
-  emulated_hue_name: "ceiling light"
+  google_assistant_name: "ceiling light"
 
 light.kitchen_ceiling_dimm_level:
-  emulated_hue_name: "kitchen light"
+  google_assistant_name: "kitchen light"
 
 group.dining_room_lights:
-  eumulated_hue_name: "dining room lights"
+  google_assistant_name: "dining room lights"
