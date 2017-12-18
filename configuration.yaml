@@ -96,6 +96,9 @@ sensor:
       - cloud_cover
       - humidity
 
+  - platform: pi_hole
+    host: 10.0.0.152
+    
 #  - platform: speedtest
 #    server_id: !secret speedtest_server_id
 #      - ping
