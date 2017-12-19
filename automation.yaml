@@ -51,6 +51,7 @@
       service: homeassistant.turn_off
       entity_id:
         - switch.front_door_light_switch
+        - switch.christmas_tree_switch
 
   - alias: 'Dining Room Lights On'
     trigger:
