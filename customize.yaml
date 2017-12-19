@@ -12,3 +12,6 @@ light.kitchen_ceiling_dimm_level:
 
 group.dining_room_lights:
   google_assistant_name: "dining room lights"
+
+switch.christmas_tree_switch:
+  google_assistant_name: "christmas tree"
