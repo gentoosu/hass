@@ -9,6 +9,7 @@ bedtime:
           - light.living_room_couch_dimm_level
           - light.living_room_ceiling_dimm_level
           - light.kitchen_ceiling_dimm_level
-          - switch.christmas_tree_switch
       - service: switch.turn_off
-        entity_id: switch.tv
+        entity_id: 
+          - switch.tv
+          - switch.christmas_tree_switch
