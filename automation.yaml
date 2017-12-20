@@ -51,7 +51,6 @@
       service: homeassistant.turn_off
       entity_id:
         - switch.front_door_light_switch
-        - switch.christmas_tree_switch
 
   - alias: 'Dining Room Lights On'
     trigger:
@@ -219,3 +218,12 @@
         entity_id: 
           - light.kitchen_ceiling_dimm_level
 #          - light.living_room_ceiling_dimm_level
+
+  - alias: 'Turn front door light on Morning'
+    trigger:
+      platform: time
+      at: "06:00:00"
+    action:
+      service: homeassistant.turn_on
+      entity_id:
+        - switch.christmas_tree_switch
