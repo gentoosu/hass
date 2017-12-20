@@ -219,7 +219,7 @@
           - light.kitchen_ceiling_dimm_level
 #          - light.living_room_ceiling_dimm_level
 
-  - alias: 'Turn front door light on Morning'
+  - alias: 'Turn on Christmas Tree'
     trigger:
       platform: time
       at: "06:00:00"
