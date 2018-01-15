@@ -240,6 +240,19 @@ google_assistant:
     - scene
     - light
     - script
+  entity_config:
+    light.living_room_couch_dimm_level:
+      name: "couch light"
+    light.master_bedroom_dimm_level:
+      name: "bedroom light"
+    light.living_room_ceiling_dimm_level:
+      name: "ceiling light"
+    light.kitchen_ceiling_dimm_level:
+      name: "kitchen light"
+    group.dining_room_lights:
+      name: "dining room lights"
+    switch.christmas_tree_switch:
+      name: "christmas tree"
 
 device_tracker:
   - platform: gpslogger
