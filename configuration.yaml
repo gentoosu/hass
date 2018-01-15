@@ -15,7 +15,7 @@ homeassistant:
 
   time_zone: America/New_York
 
-  customize: !include customize.yaml
+  #customize: !include customize.yaml
 
 map:
 
