@@ -106,7 +106,7 @@ sensor:
 #      - upload
 
   - platform: plex
-    host: 10.0.0.105
+    host: 10.0.0.158
 
   - platform: template
     sensors:
