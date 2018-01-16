@@ -15,7 +15,8 @@ default_view:
     - group.tv
     - group.garage_doors
     #- group.owntracks
-    - group.plex    
+    - group.plex
+    - sensor.plex
 
 general:
   name: General
