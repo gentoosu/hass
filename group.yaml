@@ -111,6 +111,7 @@ climate_forecast:
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_daily_summary
     - camera.radar
+    - weather.darksky
 
 TV:
   name: TV
