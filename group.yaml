@@ -76,7 +76,8 @@ garage_doors:
   entities:
     - binary_sensor.main_garage_tilt_sensor
     - binary_sensor.second_garage_tilt_sensor
-
+    - cover.main_garage_opener_barrier_state_label
+    
 lights:
   name: Lights
   entities:
