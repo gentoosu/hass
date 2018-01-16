@@ -14,7 +14,10 @@ default_view:
     - group.forecast_group
     - group.tv
     - group.garage_doors
-    - group.owntracks
+    #- group.owntracks
+    #- group.plex
+    - media_player.fire_tv
+    #- sensor.plex
 
 general:
   name: General
@@ -111,6 +114,7 @@ climate_forecast:
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_daily_summary
     - camera.radar
+    - weather.dark_sky
 
 TV:
   name: TV
@@ -130,9 +134,15 @@ Zoneminder:
     - camera.front_door
     - camera.driveway
 
-Owntracks:
-  name: Device Tracker
+Plex:
+  name: Plex
+  view: no
   entities:
-    - device_tracker.04157df488e6bc01
-    - device_tracker.3b967280ca6ea98
-    - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
+    - media_player.fire_tv
+
+# Owntracks:
+#   name: Device Tracker
+#   entities:
+#     - device_tracker.04157df488e6bc01
+#     - device_tracker.3b967280ca6ea98
+#     - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
