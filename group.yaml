@@ -14,7 +14,8 @@ default_view:
     - group.forecast_group
     - group.tv
     - group.garage_doors
-    - group.owntracks
+    #- group.owntracks
+    - group.plex    
 
 general:
   name: General
@@ -133,7 +134,7 @@ Zoneminder:
 
 Plex:
   name: Plex
-  view: yes
+  view: no
   entities:
     - media_player.fire_tv
 
