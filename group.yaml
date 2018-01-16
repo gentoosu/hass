@@ -131,9 +131,15 @@ Zoneminder:
     - camera.front_door
     - camera.driveway
 
-Owntracks:
-  name: Device Tracker
+Plex:
+  name: Plex
+  view: yes
   entities:
-    - device_tracker.04157df488e6bc01
-    - device_tracker.3b967280ca6ea98
-    - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
+    - media_player.fire_tv
+
+# Owntracks:
+#   name: Device Tracker
+#   entities:
+#     - device_tracker.04157df488e6bc01
+#     - device_tracker.3b967280ca6ea98
+#     - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
