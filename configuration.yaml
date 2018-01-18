@@ -254,9 +254,9 @@ google_assistant:
     switch.christmas_tree_switch:
       name: "christmas tree"
 
-device_tracker:
-  - platform: gpslogger
-  - platform: locative
+# device_tracker:
+#   - platform: gpslogger
+#   - platform: locative
 
 panel_iframe:
   rachio:
