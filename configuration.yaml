@@ -264,8 +264,8 @@ panel_iframe:
     url: "https://app.rach.io"
     icon: mdi:water-pump
 
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api_key
+# weather:
+#   - platform: darksky
+#     api_key: !secret darksky_api_key
    
 
