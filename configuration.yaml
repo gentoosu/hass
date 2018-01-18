@@ -62,10 +62,10 @@ updater:
 # Enables support for tracking state changes over time.
 history:
 
-#recorder:
-#  purge_interval: 1
-#  purge_keep_days: 21
-#  db_url: !secret recorder_db_url
+recorder:
+ purge_interval: 1
+ purge_keep_days: 21
+ db_url: !secret recorder_db_url
 
   
 # View all events in a logbook
