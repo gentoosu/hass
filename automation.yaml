@@ -1,12 +1,12 @@
 
-  - alias: 'Turn outside garage lights on evening'
-    trigger:
-      platform: sun
-      event: sunset
-    action:
-      - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
-      - service: homeassistant.turn_on
-        entity_id: switch.garage_outside_light_switch
+  # - alias: 'Turn outside garage lights on evening'
+  #   trigger:
+  #     platform: sun
+  #     event: sunset
+  #   action:
+  #     - delay: '+00:{{ (range(15, 45)|random|int) }}:00'
+  #     - service: homeassistant.turn_on
+  #       entity_id: switch.garage_outside_light_switch
 
   - alias: 'Turn outside garage lights off morning'
     trigger:
