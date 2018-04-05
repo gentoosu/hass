@@ -259,6 +259,10 @@ panel_iframe:
     url: "https://app.rach.io"
     icon: mdi:water-pump
 
+  nodered:
+    title: Node-Red
+    url: "http://10.0.0.170:1880"
+
 # weather:
 #   - platform: darksky
 #     api_key: !secret darksky_api_key
