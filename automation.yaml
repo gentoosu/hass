@@ -191,33 +191,33 @@
           title: "Home Assistant"
           message: "Front Door activity detected"
 
-  - alias: 'Turn on kitchen/lr ceiling lights when motion detected'
-    trigger:
-      - platform: state
-        entity_id: binary_sensor.kitchen_motion
-        to: 'on'
-        from: 'off'
-    condition:
-      condition: and
-      conditions:
-        - condition: state
-          entity_id: light.living_room_couch_dimm_level
-          state: 'off'
-        - condition: state
-          entity_id: light.kitchen_ceiling_dimm_level
-          state: 'off'
-        - condition: time
-          after: '22:00:00'
-          before: '06:45:00'
-    action:
-      - service: homeassistant.turn_on
-        entity_id: light.kitchen_ceiling_dimm_level
-        data:
-          brightness: 5
-      - delay: 00:02:00
-      - service: homeassistant.turn_off
-        entity_id: 
-          - light.kitchen_ceiling_dimm_level
+  # - alias: 'Turn on kitchen/lr ceiling lights when motion detected'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: binary_sensor.kitchen_motion
+  #       to: 'on'
+  #       from: 'off'
+  #   condition:
+  #     condition: and
+  #     conditions:
+  #       - condition: state
+  #         entity_id: light.living_room_couch_dimm_level
+  #         state: 'off'
+  #       - condition: state
+  #         entity_id: light.kitchen_ceiling_dimm_level
+  #         state: 'off'
+  #       - condition: time
+  #         after: '22:00:00'
+  #         before: '06:45:00'
+  #   action:
+  #     - service: homeassistant.turn_on
+  #       entity_id: light.kitchen_ceiling_dimm_level
+  #       data:
+  #         brightness: 5
+  #     - delay: 00:02:00
+  #     - service: homeassistant.turn_off
+  #       entity_id: 
+  #         - light.kitchen_ceiling_dimm_level
 #          - light.living_room_ceiling_dimm_level
 
   - alias: 'Turn on Christmas Tree'
