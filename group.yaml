@@ -5,8 +5,8 @@ default_view:
     - group.general
     - group.alarm
     - group.climate
-    - group.automation
-    - group.vacation_automation
+#    - group.automation
+#    - group.vacation_automation
     - group.alarm_zones
     - group.garage_doors
     - group.lights
