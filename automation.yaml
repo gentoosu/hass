@@ -119,26 +119,26 @@
       - service: homeassistant.turn_off
         entity_id: light.master_bedroom_dimm_level
 
-  - alias: 'Notify: Garage Door Open'
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_status
-        to: 'Armed'
-        for: 
-          minutes: '5'
-    condition:
-      condition: or
-      conditions:
-      - condition: state
-        entity_id: binary_sensor.main_garage_tilt_sensor
-        state: 'on'
-      - condition: state
-        entity_id: binary_sensor.second_garage_tilt_sensor
-        state: 'on'
-    action:
-      - service: notify.PB
-        data_template:
-          message: "A garage door is still open!!!!"
+  # - alias: 'Notify: Garage Door Open'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: sensor.alarm_status
+  #       to: 'Armed'
+  #       for: 
+  #         minutes: '5'
+  #   condition:
+  #     condition: or
+  #     conditions:
+  #     - condition: state
+  #       entity_id: binary_sensor.main_garage_tilt_sensor
+  #       state: 'on'
+  #     - condition: state
+  #       entity_id: binary_sensor.second_garage_tilt_sensor
+  #       state: 'on'
+  #   action:
+  #     - service: notify.PB
+  #       data_template:
+  #         message: "A garage door is still open!!!!"
 
   - alias: 'Notify: Alarm Not Set'
     trigger:
