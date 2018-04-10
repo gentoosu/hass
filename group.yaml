@@ -9,8 +9,8 @@ default_view:
 #    - group.vacation_automation
     - group.alarm_zones
     - group.garage_doors
-    - group.lights
-#    - group.outside_lights
+    - group.inside_lights
+    - group.outside_lights
     - group.climate_forecast
     - group.forecast_group
     - group.tv
