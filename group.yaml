@@ -9,8 +9,8 @@ default_view:
 #    - group.vacation_automation
     - group.alarm_zones
     - group.garage_doors
-    - group.inside_lights
-    - group.outside_lights
+    - group.lights
+#    - group.outside_lights
     - group.climate_forecast
     - group.forecast_group
     - group.tv
@@ -89,7 +89,6 @@ lights:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
 
-lights:
   name: Outside Lights
   entities:
     - switch.garage_outside_light_switch
