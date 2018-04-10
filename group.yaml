@@ -79,7 +79,7 @@ garage_doors:
     - binary_sensor.second_garage_tilt_sensor
     - cover.main_garage_opener_barrier_state_label
     
-lights:
+inside_lights:
   name: Inside Lights
   entities:
     - light.living_room_ceiling_dimm_level
@@ -89,6 +89,7 @@ lights:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
 
+outside_lights:
   name: Outside Lights
   entities:
     - switch.garage_outside_light_switch
