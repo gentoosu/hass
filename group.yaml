@@ -79,7 +79,7 @@ garage_doors:
     - cover.main_garage_opener_barrier_state_label
     
 lights:
-  name: Lights
+  name: Inside Lights
   entities:
     - light.living_room_ceiling_dimm_level
     - light.living_room_couch_dimm_level
@@ -87,10 +87,13 @@ lights:
     - light.kitchen_ceiling_dimm_level
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
+
+  name: Outside Lights
+  entities:
     - switch.garage_outside_light_switch
     - switch.front_door_light_switch
-    - switch.christmas_tree_switch
-    
+
+
 climate_group:
   name: Climate
   entities:
