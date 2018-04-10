@@ -89,6 +89,7 @@ lights:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
 
+lights:
   name: Outside Lights
   entities:
     - switch.garage_outside_light_switch
