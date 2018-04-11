@@ -8,75 +8,75 @@
   #     - service: homeassistant.turn_on
   #       entity_id: switch.garage_outside_light_switch
 
-  - alias: 'Turn outside garage lights off morning'
-    trigger:
-      platform: sun
-      event: sunrise
-    action:
-      - delay: '+00:{{ (range(1, 30)|random|int) }}:00'
-      - service: homeassistant.turn_off
-        entity_id: switch.garage_outside_light_switch
+  # - alias: 'Turn outside garage lights off morning'
+  #   trigger:
+  #     platform: sun
+  #     event: sunrise
+  #   action:
+  #     - delay: '+00:{{ (range(1, 30)|random|int) }}:00'
+  #     - service: homeassistant.turn_off
+  #       entity_id: switch.garage_outside_light_switch
 
-  - alias: 'Turn front door light on Morning'
-    trigger:
-      platform: time
-      at: "04:15:00"
-    condition:
-      - condition: time
-        weekday:
-          - mon
-          - tue
-          - wed
-          - thu
-          - fri
-    action:
-      service: homeassistant.turn_on
-      entity_id:
-        - switch.front_door_light_switch
+  # - alias: 'Turn front door light on Morning'
+  #   trigger:
+  #     platform: time
+  #     at: "04:15:00"
+  #   condition:
+  #     - condition: time
+  #       weekday:
+  #         - mon
+  #         - tue
+  #         - wed
+  #         - thu
+  #         - fri
+  #   action:
+  #     service: homeassistant.turn_on
+  #     entity_id:
+  #       - switch.front_door_light_switch
 
-  - alias: 'Turn front door light off Morning'
-    trigger:
-      platform: sun
-      event: sunrise
-      offset: "+00:30:00"
-    condition:
-      - condition: time
-        weekday:
-          - mon
-          - tue
-          - wed
-          - thu
-          - fri
-    action:
-      service: homeassistant.turn_off
-      entity_id:
-        - switch.front_door_light_switch
+  # - alias: 'Turn front door light off Morning'
+  #   trigger:
+  #     platform: sun
+  #     event: sunrise
+  #     offset: "+00:30:00"
+  #   condition:
+  #     - condition: time
+  #       weekday:
+  #         - mon
+  #         - tue
+  #         - wed
+  #         - thu
+  #         - fri
+  #   action:
+  #     service: homeassistant.turn_off
+  #     entity_id:
+  #       - switch.front_door_light_switch
 
-  - alias: 'Dining Room Lights On'
-    trigger:
-      platform: state
-      to: 'on'
-      entity_id:
-        - switch.dining_room_light_other_switch
-        - switch.dining_room_light_main_switch
-    action:
-      service: homeassistant.turn_on
-      entity_id:
-        - switch.dining_room_light_other_switch
-        - switch.dining_room_light_main_switch
+  # - alias: 'Dining Room Lights On'
+  #   trigger:
+  #     platform: state
+  #     to: 'on'
+  #     entity_id:
+  #       - switch.dining_room_light_other_switch
+  #       - switch.dining_room_light_main_switch
+  #   action:
+  #     service: homeassistant.turn_on
+  #     entity_id:
+  #       - switch.dining_room_light_other_switch
+  #       - switch.dining_room_light_main_switch
 
-  - alias: 'Dining Room Lights Off'
-    trigger:
-      platform: state
-      to: 'off'
-      entity_id:
-        - switch.dining_room_light_other_switch
-        - switch.dining_room_light_main_switch
-    action:
-      service: homeassistant.turn_off
-      entity_id:
-        - switch.dining_room_light_other_switch
-        - switch.dining_room_light_main_switch
+  # - alias: 'Dining Room Lights Off'
+  #   trigger:
+  #     platform: state
+  #     to: 'off'
+  #     entity_id:
+  #       - switch.dining_room_light_other_switch
+  #       - switch.dining_room_light_main_switch
+  #   action:
+  #     service: homeassistant.turn_off
+  #     entity_id:
+  #       - switch.dining_room_light_other_switch
+  #       - switch.dining_room_light_main_switch
 
   - alias: 'Vacation - Turn living room lights on Evening'
     initial_state: False
@@ -140,34 +140,34 @@
   #       data_template:
   #         message: "A garage door is still open!!!!"
 
-  - alias: 'Notify: Alarm Not Set'
-    trigger:
-      - platform: state
-        entity_id: sensor.anyone_home
-        to: 'not_home'
-        for: 
-          minutes: '1'
-    condition:
-      - condition: state
-        entity_id: sensor.alarm_status
-        state: 'Disarmed'
-    action:
-      - service: notify.PB
-        data_template:
-          message: "You did not set the alarm!!!!"
+  # - alias: 'Notify: Alarm Not Set'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: sensor.anyone_home
+  #       to: 'not_home'
+  #       for: 
+  #         minutes: '1'
+  #   condition:
+  #     - condition: state
+  #       entity_id: sensor.alarm_status
+  #       state: 'Disarmed'
+  #   action:
+  #     - service: notify.PB
+  #       data_template:
+  #         message: "You did not set the alarm!!!!"
 
-  - alias: 'Turn on lights when home after sunset'
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_status
-        to: 'Disarmed'
-    condition:
-      - condition: state
-        entity_id: sun.sun
-        state: 'below_horizon'
-    action:
-      - service: homeassistant.turn_on
-        entity_id: light.living_room_couch_dimm_level
+  # - alias: 'Turn on lights when home after sunset'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: sensor.alarm_status
+  #       to: 'Disarmed'
+  #   condition:
+  #     - condition: state
+  #       entity_id: sun.sun
+  #       state: 'below_horizon'
+  #   action:
+  #     - service: homeassistant.turn_on
+  #       entity_id: light.living_room_couch_dimm_level
   
   - alias: 'Notify FireTV when driveway camera records'
     trigger:
