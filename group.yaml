@@ -146,9 +146,8 @@ Plex:
   entities:
     - media_player.fire_tv
 
-# Owntracks:
-#   name: Device Tracker
-#   entities:
-#     - device_tracker.04157df488e6bc01
-#     - device_tracker.3b967280ca6ea98
-#     - device_tracker.84ac0ddb496b49c7ab4f427dbb271c72
+Presence:
+  name: Device Tracker
+  entities:
+    - device_tracker.mike_note8
+    - device_tracker.amysiphone
