@@ -251,10 +251,10 @@ google_assistant:
 
 device_tracker:
   - platform: owntracks_http
-  # - platform: icloud
-  #   username:
-  #   password:
-  #   account_name:
+  - platform: icloud
+    username: !secret icloud_user
+    password: !secret icloud_pass
+    account_name: Amy
 
 #   - platform: gpslogger
 #   - platform: locative
