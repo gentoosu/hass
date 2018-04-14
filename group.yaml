@@ -15,7 +15,7 @@ default_view:
     - group.forecast_group
     - group.tv
     - group.garage_doors
-    #- group.owntracks
+    - group.presence
     #- group.plex
     - media_player.fire_tv
     #- sensor.plex
