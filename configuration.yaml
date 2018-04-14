@@ -137,7 +137,7 @@ climate:
 zwave:
   usb_path: /dev/ttyACM0
 #  config_path: /usr/local/lib/python3.4/dist-packages/libopenzwave-0.3.2-py3.4-linux-armv7l.egg/config 
-  polling_interval: 30000
+  #polling_interval: 30000
   # device_config_domain:
   #   light:
   #     polling_intensity: 1
