@@ -171,7 +171,7 @@ notify:
 #  homeassistant.components: debug
 logger:
   default: info
-  logs:
+  #logs:
     #homeassistant.components.automation: debug
     #homeassistant.components.switch.broadlink: info
     #homeassistant.components: debug
