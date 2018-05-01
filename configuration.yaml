@@ -257,7 +257,7 @@ device_tracker:
     account_name: Amy
 
   - platform: gpslogger
-#   - platform: locative
+
 
 panel_iframe:
   rachio:
