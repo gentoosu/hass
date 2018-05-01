@@ -256,7 +256,7 @@ device_tracker:
     password: !secret icloud_pass
     account_name: Amy
 
-   - platform: gpslogger
+  - platform: gpslogger
 #   - platform: locative
 
 panel_iframe:
