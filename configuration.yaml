@@ -221,7 +221,7 @@ zoneminder:
   host: 10.0.0.171
 
 influxdb:
-  host: 10.0.0.123
+  host: 10.0.0.173
 
 google_assistant:
   project_id: !secret google_assistant_project_id
