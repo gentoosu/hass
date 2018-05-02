@@ -218,7 +218,7 @@ camera:
   - platform: zoneminder
 
 zoneminder:
-  host: 10.0.0.118
+  host: 10.0.0.171
 
 influxdb:
   host: 10.0.0.123
