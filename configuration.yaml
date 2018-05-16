@@ -122,7 +122,11 @@ sensor:
     sensors:
       alarm_status:
         value_template: "{% if is_state('sensor.alarm_panel_display', 'ARMED ***AWAY***** ALL SECURE **') or is_state('sensor.alarm_panel_display', 'ARMED ***STAY***                ') %}Armed{%else%}Disarmed{% endif %}"
-
+  
+  - platform: sabnzbd
+    host: 10.0.0.159
+    api_key: !secret sabnzbd_api_key
+    
 # Text to speech
 tts:
   platform: google
