@@ -222,7 +222,7 @@ camera:
 
   - platform: zoneminder
   - platform: yi
-    hame: Doggo
+    name: Doggo
     host: '10.0.0.84'
     password: !secret yi_password
 
