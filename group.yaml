@@ -139,7 +139,12 @@ Zoneminder:
   entities:
     - camera.front_door
     - camera.driveway
-
+Doggo:
+  name: Doggo
+  view: yes
+  entities:
+    - camera.doggo
+    
 Plex:
   name: Plex
   view: no
