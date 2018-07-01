@@ -221,6 +221,10 @@ camera:
     name: radar
 
   - platform: zoneminder
+  - platform: yi
+    hame: Doggo
+    host: '10.0.0.84'
+    password: !secret yi_password
 
 zoneminder:
   host: 10.0.0.171
