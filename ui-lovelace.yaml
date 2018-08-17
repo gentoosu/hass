@@ -1,0 +1,21 @@
+name: Casa de Hersh
+views:
+- icon: mdi:home
+  title: Home
+  id: home
+  cards:
+    - type: picture-glance
+      title: Front Door
+      image:
+      camera_image: camera.front_door
+      entities:
+        - camera.front_door
+        - switch.front_door_light_switch
+    - type: picture-glance
+      title: Driveway
+      image:
+      navigation_path: /lovelace/driveway
+      camera_image: camera.driveway
+      entities:
+        - camera.driveway
+        - switch.garage_outside_light_switch
