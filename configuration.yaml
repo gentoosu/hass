@@ -229,6 +229,7 @@ camera:
   - platform: uvc
     nvr: 10.0.0.167
     key: !secret uvc_password
+    port: 7443
 
 
 zoneminder:
