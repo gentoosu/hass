@@ -137,7 +137,7 @@ Zoneminder:
   name: Zoneminder
   view: yes
   entities:
-    - camera.front_door_2
+    - camera.front_door
     - camera.driveway
 Doggo:
   name: Doggo
