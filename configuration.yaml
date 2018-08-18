@@ -228,7 +228,8 @@ camera:
   
   - platform: uvc
     nvr: 10.0.0.167
-    key: !secret uvc_password
+    key: !secret uvc_api_key
+
     port: 7443
 
 
