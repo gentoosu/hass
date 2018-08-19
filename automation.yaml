@@ -78,46 +78,46 @@
   #       - switch.dining_room_light_other_switch
   #       - switch.dining_room_light_main_switch
 
-  - alias: 'Vacation - Turn living room lights on Evening'
-    initial_state: False
-    trigger:
-      platform: sun
-      event: sunset
-    action:
-      - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
-      - service: homeassistant.turn_on
-        entity_id: light.living_room_ceiling_dimm_level
+  # - alias: 'Vacation - Turn living room lights on Evening'
+  #   initial_state: False
+  #   trigger:
+  #     platform: sun
+  #     event: sunset
+  #   action:
+  #     - delay: '+00:{{ (range(1, 59)|random|int) }}:00'
+  #     - service: homeassistant.turn_on
+  #       entity_id: light.living_room_ceiling_dimm_level
 
-  - alias: 'Vacation - Turn living rooms lights off Evening'
-    initial_state: False
-    trigger:
-      platform: time
-      at: "22:00:00"
-    action:
-      - delay: '01:{{ (range(1, 59)|random|int) }}:00'
-      - service: homeassistant.turn_off
-        entity_id: light.living_room_ceiling_dimm_level
+  # - alias: 'Vacation - Turn living rooms lights off Evening'
+  #   initial_state: False
+  #   trigger:
+  #     platform: time
+  #     at: "22:00:00"
+  #   action:
+  #     - delay: '01:{{ (range(1, 59)|random|int) }}:00'
+  #     - service: homeassistant.turn_off
+  #       entity_id: light.living_room_ceiling_dimm_level
 
-  - alias: 'Vacation - Turn Bedroom On after Living Room off'
-    initial_state: False
-    trigger:
-      platform: state
-      to: 'off'
-      entity_id: light.living_room_ceiling_dimm_level
-    action:
-      - service: homeassistant.turn_on
-        entity_id: light.master_bedroom_dimm_level
+  # - alias: 'Vacation - Turn Bedroom On after Living Room off'
+  #   initial_state: False
+  #   trigger:
+  #     platform: state
+  #     to: 'off'
+  #     entity_id: light.living_room_ceiling_dimm_level
+  #   action:
+  #     - service: homeassistant.turn_on
+  #       entity_id: light.master_bedroom_dimm_level
 
-  - alias: 'Vacation - Turn Bedroom Off'
-    initial_state: False    
-    trigger:
-      platform: state
-      to: 'on'
-      entity_id: light.master_bedroom_dimm_level
-    action:
-      - delay: '00:{{ (range(15, 45)|random|int) }}:00'
-      - service: homeassistant.turn_off
-        entity_id: light.master_bedroom_dimm_level
+  # - alias: 'Vacation - Turn Bedroom Off'
+  #   initial_state: False    
+  #   trigger:
+  #     platform: state
+  #     to: 'on'
+  #     entity_id: light.master_bedroom_dimm_level
+  #   action:
+  #     - delay: '00:{{ (range(15, 45)|random|int) }}:00'
+  #     - service: homeassistant.turn_off
+  #       entity_id: light.master_bedroom_dimm_level
 
   # - alias: 'Notify: Garage Door Open'
   #   trigger:
