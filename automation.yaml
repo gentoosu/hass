@@ -220,11 +220,11 @@
   #         - light.kitchen_ceiling_dimm_level
 #          - light.living_room_ceiling_dimm_level
 
-  - alias: 'Turn on Christmas Tree'
-    trigger:
-      platform: time
-      at: "06:00:00"
-    action:
-      service: homeassistant.turn_on
-      entity_id:
-        - switch.christmas_tree_switch
+  # - alias: 'Turn on Christmas Tree'
+  #   trigger:
+  #     platform: time
+  #     at: "06:00:00"
+  #   action:
+  #     service: homeassistant.turn_on
+  #     entity_id:
+  #       - switch.christmas_tree_switch
