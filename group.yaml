@@ -134,7 +134,7 @@ Dining_Room_Lights:
     - switch.dining_room_light_other_switch
 
 Cameras:
-  name: Zoneminder
+  name: Sec Cameras
   view: yes
   entities:
     - camera.front_door
