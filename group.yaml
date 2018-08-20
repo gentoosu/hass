@@ -133,7 +133,7 @@ Dining_Room_Lights:
     - switch.dining_room_light_main_switch
     - switch.dining_room_light_other_switch
 
-Zoneminder:
+Cameras:
   name: Zoneminder
   view: yes
   entities:
