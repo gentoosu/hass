@@ -139,6 +139,9 @@ Cameras:
   entities:
     - camera.front_door
     - camera.driveway_1
+    - camera.driveway_2
+    - camera.patio
+    
 Doggo:
   name: Doggo
   view: yes
