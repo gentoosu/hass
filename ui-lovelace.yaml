@@ -17,5 +17,6 @@ views:
       navigation_path: /lovelace/driveway
       camera_image: camera.driveway
       entities:
-        - camera.driveway
+        - camera.driveway_1
+        - camera.driveway_2
         - switch.garage_outside_light_switch
