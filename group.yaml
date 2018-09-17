@@ -92,6 +92,7 @@ inside_lights:
 outside_lights:
   name: Outside Lights
   entities:
+    - switch.garage_inside_light_switch
     - switch.garage_outside_light_switch
     - switch.front_door_light_switch
 
@@ -141,7 +142,7 @@ Cameras:
     - camera.driveway_1
     - camera.driveway_2
     - camera.patio
-    
+
 Doggo:
   name: Doggo
   view: yes
