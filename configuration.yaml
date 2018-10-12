@@ -16,10 +16,10 @@ homeassistant:
   time_zone: America/New_York
 
   customize: !include customize.yaml
-auth_providers:
-  - type: homeassistant
+  auth_providers:
+  #- type: homeassistant
   # below will be required for node red to continue to work.
-  - type: legacy_api_password
+    - type: legacy_api_password
 
 map:
 
