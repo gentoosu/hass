@@ -1,22 +1,54 @@
-name: Casa de Hersh
+title: Home
 views:
-- icon: mdi:home
-  title: Home
-  id: home
-  cards:
-    - type: picture-glance
-      title: Front Door
-      image:
-      camera_image: camera.front_door
-      entities:
-        - camera.front_door
-        - switch.front_door_light_switch
-    - type: picture-glance
-      title: Driveway
-      image:
-      navigation_path: /lovelace/driveway
-      camera_image: camera.driveway
-      entities:
-        - camera.driveway_1
-        - camera.driveway_2
-        - switch.garage_outside_light_switch
+  - title: Home
+    cards:
+      - type: picture-glance
+        title: Front Door
+        image:
+        camera_image: camera.front_door
+        entities:
+          - camera.front_door
+          - switch.front_door_light_switch
+      - type: picture-glance
+        title: Driveway 2
+        #image:
+        #navigation_path: /lovelace/driveway
+        #camera_image: camera.driveway_1
+        camera_image: camera.driveway_2
+        entities:
+          # - camera.driveway_1
+          - camera.driveway_2
+          - switch.garage_outside_light_switch
+      - type: sensor
+        entity: sensor.garage_motion_sensor_temperature
+        name: Garage Temp
+        height: 75
+        line_color: "#3498db"
+      - type: sensor
+        entity: sensor.garage_fridge_motion_sensor_temperature
+        name: Garage Fridge Temp
+        height: 75
+        line_color: "#3498db"
+
+  - title: Cameras
+    cards:
+      - type: horizontal-stack
+        cards:
+        - type: picture-entity
+          #camera_image: camera.driveway_1
+          entity: camera.driveway_1
+          #entity: switch.front_door_light_switch
+        - type: picture-entity
+          camera_image: camera.driveway_2
+          entities:
+            - switch.front_door_light_switch
+      - type: horizontal-stack
+        cards:
+        - type: picture-entity
+          camera_image: camera.front_door
+          entities:
+            - switch.front_door_light_switch
+        - type: picture-entity
+          camera_image: camera.patio
+          entities:
+            - switch.front_door_light_switch
