@@ -283,7 +283,7 @@ panel_iframe:
     title: Node-Red
     url: "http://10.0.0.170:1880"
 
-datadog:
+#datadog:
 # weather:
 #   - platform: darksky
 #     api_key: !secret darksky_api_key
