@@ -1,3 +1,7 @@
+resources:
+  - url: /local/surveillance-card.js?v=0
+    type: module
+
 title: Home
 views:
   - title: Home
@@ -29,7 +33,11 @@ views:
         name: Garage Fridge Temp
         height: 75
         line_color: "#3498db"
-
+      - type: sensor
+        entity: sensor.master_bedroom_motion_sensor_temperature
+        name: Master Bedroom Temp
+        height: 75
+        line_color: "#3498db"
   - title: Cameras
     cards:
       - type: horizontal-stack
@@ -52,3 +60,15 @@ views:
           camera_image: camera.patio
           entities:
             - switch.front_door_light_switch
+  - title: Surveillance
+    icon: mdi:cctv
+    panel: true
+    cards:
+      - type: custom:surveillance-card
+        thumb_interval: 10
+        update_interval: 1
+        cameras:
+          - entity: camera.driveway_1
+          - entity: camera.driveway_2
+          - entity: camera.front_door
+          - entity: camera.patio
