@@ -23,43 +23,24 @@ views:
           # - camera.driveway_1
           - camera.driveway_2
           - switch.garage_outside_light_switch
-      - type: sensor
-        entity: sensor.garage_motion_sensor_temperature
-        name: Garage Temp
-        height: 75
-        line_color: "#3498db"
-      - type: sensor
-        entity: sensor.garage_fridge_motion_sensor_temperature
-        name: Garage Fridge Temp
-        height: 75
-        line_color: "#3498db"
-      - type: sensor
-        entity: sensor.master_bedroom_motion_sensor_temperature
-        name: Master Bedroom Temp
-        height: 75
-        line_color: "#3498db"
-  - title: Cameras
-    cards:
       - type: horizontal-stack
         cards:
-        - type: picture-entity
-          #camera_image: camera.driveway_1
-          entity: camera.driveway_1
-          #entity: switch.front_door_light_switch
-        - type: picture-entity
-          camera_image: camera.driveway_2
-          entities:
-            - switch.front_door_light_switch
-      - type: horizontal-stack
-        cards:
-        - type: picture-entity
-          camera_image: camera.front_door
-          entities:
-            - switch.front_door_light_switch
-        - type: picture-entity
-          camera_image: camera.patio
-          entities:
-            - switch.front_door_light_switch
+          - type: sensor
+            entity: sensor.garage_motion_sensor_temperature
+            name: Garage Temp
+            height: 75
+            line_color: "#3498db"
+          - type: sensor
+            entity: sensor.garage_fridge_motion_sensor_temperature
+            name: Garage Fridge Temp
+            height: 75
+            line_color: "#3498db"
+          - type: sensor
+            entity: sensor.master_bedroom_motion_sensor_temperature
+            name: Master Bedroom Temp
+            height: 75
+            line_color: "#3498db"
+
   - title: Surveillance
     icon: mdi:cctv
     panel: true
@@ -72,3 +53,29 @@ views:
           - entity: camera.driveway_2
           - entity: camera.front_door
           - entity: camera.patio
+          - title: Cameras
+    
+    
+    
+    # cards:
+    #   - type: horizontal-stack
+    #     cards:
+    #     - type: picture-entity
+    #       #camera_image: camera.driveway_1
+    #       entity: camera.driveway_1
+    #       #entity: switch.front_door_light_switch
+    #     - type: picture-entity
+    #       camera_image: camera.driveway_2
+    #       entities:
+    #         - switch.front_door_light_switch
+    #   - type: horizontal-stack
+    #     cards:
+    #     - type: picture-entity
+    #       camera_image: camera.front_door
+    #       entities:
+    #         - switch.front_door_light_switch
+    #     - type: picture-entity
+    #       camera_image: camera.patio
+    #       entities:
+    #         - switch.front_door_light_switch
+
