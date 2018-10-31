@@ -6,23 +6,23 @@ title: Home
 views:
   - title: Home
     cards:
-      - type: picture-glance
-        title: Front Door
-        image:
-        camera_image: camera.front_door
-        entities:
-          - camera.front_door
-          - switch.front_door_light_switch
-      - type: picture-glance
-        title: Driveway 2
-        #image:
-        #navigation_path: /lovelace/driveway
-        #camera_image: camera.driveway_1
-        camera_image: camera.driveway_2
-        entities:
-          # - camera.driveway_1
-          - camera.driveway_2
-          - switch.garage_outside_light_switch
+      # - type: picture-glance
+      #   title: Front Door
+      #   image:
+      #   camera_image: camera.front_door
+      #   entities:
+      #     - camera.front_door
+      #     - switch.front_door_light_switch
+      # - type: picture-glance
+      #   title: Driveway 2
+      #   #image:
+      #   #navigation_path: /lovelace/driveway
+      #   #camera_image: camera.driveway_1
+      #   camera_image: camera.driveway_2
+      #   entities:
+      #     # - camera.driveway_1
+      #     - camera.driveway_2
+      #     - switch.garage_outside_light_switch
       - type: horizontal-stack
         cards:
           - type: sensor
