@@ -54,6 +54,13 @@ views:
           - entity: camera.front_door
           - entity: camera.patio
 
+  - title: Weather
+    icon: mdi:weather
+    panel: true 
+    cards:
+      - type: weather-forecast
+        entity: weather.demo_weather_north
+
   # - title: Cameras
     # cards:
     #   - type: horizontal-stack
