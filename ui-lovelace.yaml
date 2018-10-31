@@ -59,7 +59,7 @@ views:
     panel: true 
     cards:
       - type: weather-forecast
-        entity: weather.demo_weather_north
+        entity: weather.darksky
 
   # - title: Cameras
     # cards:
