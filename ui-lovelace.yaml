@@ -40,6 +40,7 @@ views:
             name: Master Bedroom Temp
             height: 75
             line_color: "#3498db"
+            accuracy: 100
 
   - title: Surveillance
     icon: mdi:cctv
@@ -55,11 +56,11 @@ views:
           - entity: camera.patio
 
   - title: Weather
-    icon: mdi:weather
+    #icon: mdi:weather
     panel: true 
     cards:
       - type: weather-forecast
-        entity: weather.darksky
+        entity: weather.dark_sky
 
   # - title: Cameras
     # cards:
