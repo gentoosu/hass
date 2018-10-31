@@ -53,10 +53,8 @@ views:
           - entity: camera.driveway_2
           - entity: camera.front_door
           - entity: camera.patio
-          - title: Cameras
-    
-    
-    
+
+  # - title: Cameras
     # cards:
     #   - type: horizontal-stack
     #     cards:
