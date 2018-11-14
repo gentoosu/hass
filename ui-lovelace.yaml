@@ -156,3 +156,17 @@ views:
         camera_image: camera.patio
         show_info: true
         tap_action: dialog
+
+  - title: Surveillance
+    icon: mdi:cctv
+    panel: true
+    cards:
+      - type: custom:surveillance-card
+        thumb_interval: 10
+        update_interval: 1
+        cameras:
+          - entity: camera.driveway_1
+          - entity: camera.driveway_2
+          - entity: camera.front_door
+          - entity: camera.patio
+
