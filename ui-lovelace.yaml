@@ -77,6 +77,26 @@ views:
         entities:
           - device_tracker.mike_note8
           - device_tracker.amysiphone
+      
+      - type: horizontal-stack
+        cards:
+          - type: sensor
+            entity: sensor.garage_motion_sensor_temperature
+            name: Garage Temp
+            height: 75
+            line_color: "#3498db"
+          - type: sensor
+            entity: sensor.garage_fridge_motion_sensor_temperature
+            name: Garage Fridge Temp
+            height: 75
+            line_color: "#3498db"
+          - type: sensor
+            entity: sensor.master_bedroom_motion_sensor_temperature
+            name: Master Bedroom Temp
+            height: 75
+            line_color: "#3498db"
+            accuracy: 100
+
   - title: Alarm Zones
     cards:
       - type: entities
