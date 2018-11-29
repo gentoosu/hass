@@ -130,6 +130,10 @@ sensor:
   - platform: sabnzbd
     host: 10.0.0.159
     api_key: !secret sabnzbd_api_key
+  
+  - platform: tautulli
+    api_key: !secret tautulli_api_key
+    host: 10.0.0.157
 
 # Text to speech
 tts:
