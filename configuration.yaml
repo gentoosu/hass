@@ -180,7 +180,7 @@ notify:
 logger:
   default: info
   logs:
-    homeassistant.components.gpslogger: debug
+    #homeassistant.components.gpslogger: debug
     #homeassistant.components.automation: debug
     #homeassistant.components.switch.broadlink: info
     #homeassistant.components: debug
