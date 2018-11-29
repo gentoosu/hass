@@ -268,11 +268,11 @@ device_tracker:
   - platform: gpslogger
 
 
-panel_iframe:
-  rachio:
-    title: Rachio
-    url: "https://app.rach.io"
-    icon: mdi:water-pump
+# panel_iframe:
+#   rachio:
+#     title: Rachio
+#     url: "https://app.rach.io"
+#     icon: mdi:water-pump
 
   nodered:
     title: Node-Red
