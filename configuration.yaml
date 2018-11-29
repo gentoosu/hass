@@ -272,7 +272,7 @@ device_tracker:
   - platform: gpslogger
 
 
-# panel_iframe:
+panel_iframe:
 #   rachio:
 #     title: Rachio
 #     url: "https://app.rach.io"
