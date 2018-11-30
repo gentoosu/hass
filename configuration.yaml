@@ -184,8 +184,8 @@ notify:
 logger:
   default: info
   logs:
-    #homeassistant.components.gpslogger: debug
-    #homeassistant.components.automation: debug
+    homeassistant.components.image_processing: debug
+    homeassistant.components.sensor.tautulli: debug
     #homeassistant.components.switch.broadlink: info
     #homeassistant.components: debug
     #homeassistant.components.alarmdecoder: debug
