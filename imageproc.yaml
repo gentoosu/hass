@@ -1,15 +1,15 @@
 - platform: tensorflow
-    source:
-      - entity_id: camera.front_door
-      - entity_id: camera.driveway_1
-      - entity_id: camera.driveway_2
-    graph: /home/homeassistant/.homeassistant/tensorflow/frozen_inference_graph.pb
+  source:
+    - entity_id: camera.front_door
+    - entity_id: camera.driveway_1
+    - entity_id: camera.driveway_2
+  graph: /home/homeassistant/.homeassistant/tensorflow/frozen_inference_graph.pb
     categories:
-      - category: person
-        # area:
-        #   # Exclude top 10% of image
-        #   top: 0.1
-        #   # Exclude right 15% of image
-        #   right: 0.85
-      - car
-      - truck
+    - category: person
+      # area:
+      #   # Exclude top 10% of image
+      #   top: 0.1
+      #   # Exclude right 15% of image
+      #   right: 0.85
+    - car
+    - truck
