@@ -48,6 +48,7 @@ views:
           - light.living_room_couch_dimm_level
           - light.master_bedroom_dimm_level
           - light.kitchen_ceiling_dimm_level
+          - swith.christmas_tree_switch
       - type: entities
         title: Outside Lights
         show_header_toggle: true
