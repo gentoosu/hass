@@ -219,7 +219,7 @@ switch:
   #   access_token: !secret rachio_access_token
 
 alarmdecoder: !include alarmdecoder.yaml
-automation: !include automation.yaml
+#automation: !include automation.yaml
 group: !include group.yaml
 script: !include script.yaml
 #image_processing: !include imageproc.yaml
