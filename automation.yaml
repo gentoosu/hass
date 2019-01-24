@@ -169,27 +169,27 @@
   #     - service: homeassistant.turn_on
   #       entity_id: light.living_room_couch_dimm_level
   
-  - alias: 'Notify FireTV when driveway camera records'
-    trigger:
-      - platform: state
-        entity_id: camera.driveway
-        to: 'recording'
-    action:
-      - service: notify.Vizio
-        data:
-          title: "Home Assistant"
-          message: "Driveway activity detected"
+  # - alias: 'Notify FireTV when driveway camera records'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: camera.driveway
+  #       to: 'recording'
+  #   action:
+  #     - service: notify.Vizio
+  #       data:
+  #         title: "Home Assistant"
+  #         message: "Driveway activity detected"
             
-  - alias: 'Notify FireTV when front door camera records'
-    trigger:
-      - platform: state
-        entity_id: camera.front_door
-        to: 'recording'
-    action:
-      - service: notify.Vizio
-        data:
-          title: "Home Assistant"
-          message: "Front Door activity detected"
+  # - alias: 'Notify FireTV when front door camera records'
+  #   trigger:
+  #     - platform: state
+  #       entity_id: camera.front_door
+  #       to: 'recording'
+  #   action:
+  #     - service: notify.Vizio
+  #       data:
+  #         title: "Home Assistant"
+  #         message: "Front Door activity detected"
 
   # - alias: 'Turn on kitchen/lr ceiling lights when motion detected'
   #   trigger:
