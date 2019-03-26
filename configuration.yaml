@@ -20,6 +20,7 @@ homeassistant:
   #- type: homeassistant
   # below will be required for node red to continue to work.
     - type: legacy_api_password
+      api_password: !secret http_api_password
 
 map:
 
@@ -48,7 +49,9 @@ config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  api_password: !secret http_api_password
+  #api_password: !secret http_api_password
+  #  group.dining_room_lights:
+  #    name: "dining room lights"
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
   #ssl_certificate: !secret http_ssl_certificate
