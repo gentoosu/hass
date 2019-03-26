@@ -235,6 +235,7 @@ camera:
     nvr: 10.0.0.186
     key: !secret uvc_api_key
     password: !secret uvc_password
+    framerate: 10
 
 influxdb:
   host: 10.0.0.173
