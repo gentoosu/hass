@@ -163,11 +163,10 @@ cover:
   platform: zwave
 
 media_player:
-  - platform: firetv
+  - platform: androidtv
     #device: livingroom
-    host: 10.0.0.168
-    port: 5556
-    name: FireTV - Living Room
+    host: 10.0.0.55
+    name: NVidia Shield
   - platform: plex
 
 notify:
