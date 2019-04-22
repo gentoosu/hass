@@ -136,6 +136,7 @@ sensor:
   - platform: tautulli
     api_key: !secret tautulli_api_key
     host: 10.0.0.157
+    path: /plexpy
 
 # Text to speech
 tts:
