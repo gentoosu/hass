@@ -139,7 +139,7 @@ sensor:
     path: /plexpy
 
 # Text to speech
-tts:
+google_translate:
   platform: google
 
 nest:
