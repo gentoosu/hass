@@ -139,8 +139,8 @@ sensor:
     path: /plexpy
 
 # Text to speech
-google_translate:
-  platform: google
+tts:
+  platform: google_translate
 
 nest:
   client_id: !secret nest_client_id
