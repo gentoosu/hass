@@ -2,6 +2,7 @@
   name: Front Door Person Detection
   source:
     - entity_id: camera.front_door
+    - entity_id: camera.patio
     # - entity_id: camera.driveway_1
     # - entity_id: camera.driveway_2
   model:
