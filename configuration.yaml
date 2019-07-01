@@ -90,8 +90,6 @@ sensor:
       - precip_intensity
       - precip_probability
       - temperature
-      - temperature_max
-      - temperature_min
       - wind_speed
       - wind_bearing
       - visibility
