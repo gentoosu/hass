@@ -138,6 +138,11 @@ sensor:
     host: 10.0.0.157
     path: /plexpy
 
+  - platform: waze_travel_time
+    origin: !secret home_address
+    destination: !secret work_address
+    region: 'US'
+
 # Text to speech
 tts:
   platform: google_translate
