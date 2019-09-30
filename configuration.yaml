@@ -101,9 +101,6 @@ sensor:
       - cloud_cover
       - humidity
 
-  - platform: pi_hole
-    host: 10.0.0.152
-
   - platform: template
     sensors:
       anyone_home:
@@ -294,3 +291,5 @@ plex:
   host: 10.0.0.158
   token: !secret plex_api_key
   
+pi_hole:
+  host: 10.0.0.152
