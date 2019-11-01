@@ -127,13 +127,14 @@ sensor:
   
   - platform: tautulli
     api_key: !secret tautulli_api_key
-    host: 10.0.0.157
+    host: 10.0.0.155
     path: /plexpy
 
   - platform: waze_travel_time
     origin: !secret home_address
     destination: !secret work_address
     region: 'US'
+    realtime: true
 
 # Text to speech
 tts:
