@@ -259,14 +259,14 @@ google_assistant:
     switch.christmas_tree_switch:
       name: "christmas tree"
 
-device_tracker:
-  #- platform: owntracks_http
-  - platform: icloud
-    username: !secret icloud_user
-    password: !secret icloud_pass
-    account_name: Amy
+# device_tracker:
+#   #- platform: owntracks_http
+#   - platform: icloud
+#     username: !secret icloud_user
+#     password: !secret icloud_pass
+#     account_name: Amy
 
-  - platform: gpslogger
+#   - platform: gpslogger
 
 
 panel_iframe:
