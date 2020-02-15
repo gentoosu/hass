@@ -163,7 +163,7 @@ cover:
 media_player:
   - platform: androidtv
     #device: livingroom
-    host: 10.0.0.55
+    host: 10.0.0.58
     name: NVidia Shield
 
 notify:
