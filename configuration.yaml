@@ -275,16 +275,15 @@ panel_iframe:
 #     title: Rachio
 #     url: "https://app.rach.io"
 #     icon: mdi:water-pump
-
+  nodered:
+    title: Node-Red
+    url: "http://10.0.0.170:1880"
+    
 panel_custom:
   - name: zwavegraph2
     sidebar_title: ZWave Graph2
     sidebar_icon: mdi:access-point-network
     url_path: zwave
-
-  nodered:
-    title: Node-Red
-    url: "http://10.0.0.170:1880"
 
 #datadog:
 
