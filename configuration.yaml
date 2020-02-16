@@ -276,6 +276,12 @@ panel_iframe:
 #     url: "https://app.rach.io"
 #     icon: mdi:water-pump
 
+panel_custom:
+  - name: zwavegraph2
+    sidebar_title: ZWave Graph2
+    sidebar_icon: mdi:access-point-network
+    url_path: zwave
+
   nodered:
     title: Node-Red
     url: "http://10.0.0.170:1880"
