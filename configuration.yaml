@@ -43,6 +43,8 @@ zone:
 frontend:
   javascript_version: latest
 
+mobile_app:
+
 # Enables configuration UI
 config:
 
