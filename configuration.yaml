@@ -222,7 +222,7 @@ switch:
 
 alarmdecoder: !include alarmdecoder.yaml
 #automation: !include automation.yaml
-group: !include group.yaml
+#group: !include group.yaml
 script: !include script.yaml
 image_processing: !include imageproc.yaml
 
