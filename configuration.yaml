@@ -45,6 +45,8 @@ frontend:
 
 mobile_app:
 
+system_health:
+
 # Enables configuration UI
 config:
 
