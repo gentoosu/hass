@@ -244,7 +244,7 @@ camera:
     stream_source: rtsp://10.0.0.60:7447/oCof7Hjfy2e1DsyC
     verify_ssl: false  
   - platform: generic
-    name: Front Dorr
+    name: Front Door
     still_image_url: https://10.0.0.6/snap.jpeg
     stream_source: rtsp://10.0.0.60:7447/4Uc1k0FynHrNd4uy
     verify_ssl: false  
