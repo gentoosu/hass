@@ -3,6 +3,7 @@
     host: 10.0.0.8
     port: 10000
   panel_display: On
+  code_arm_required: false
   zones:
     01:
       name: 'Smoke Detector'
