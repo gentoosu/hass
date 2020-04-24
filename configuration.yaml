@@ -42,7 +42,6 @@ zone:
 # Enables the frontend
 frontend:
   javascript_version: latest
-themes:
 
 mobile_app:
 
