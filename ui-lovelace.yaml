@@ -9,6 +9,8 @@ resources:
     type: module
   - url: /local/button-card.js
     type: module
+  - url: /local/custom-header.js
+    type: module
 
 title: Home
 views:
