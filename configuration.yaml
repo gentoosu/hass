@@ -17,7 +17,7 @@ homeassistant:
 
   customize: !include customize.yaml
   auth_providers:
-  #- type: homeassistant
+    - type: homeassistant
   # below will be required for node red to continue to work.
     - type: legacy_api_password
       api_password: !secret http_api_password
