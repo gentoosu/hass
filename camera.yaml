@@ -1,0 +1,23 @@
+- platform: generic
+  still_image_url: https://maps.darksky.net/@radar,27.520,-82.561,10
+  name: radar
+- platform: generic
+  name: Driveway 1
+  still_image_url: https://10.0.0.7/snap.jpeg
+  stream_source: rtsp://10.0.0.60:7447/B53yBWvLAS5XnOfh
+  verify_ssl: false  
+- platform: generic
+  name: Driveway 2
+  still_image_url: https://10.0.0.10/snap.jpeg
+  stream_source: rtsp://10.0.0.60:7447/oCof7Hjfy2e1DsyC
+  verify_ssl: false  
+- platform: generic
+  name: Front Door
+  still_image_url: https://10.0.0.6/snap.jpeg
+  stream_source: rtsp://10.0.0.60:7447/4Uc1k0FynHrNd4uy
+  verify_ssl: false  
+- platform: generic
+  name: Patio
+  still_image_url: https://10.0.0.11/snap.jpeg
+  stream_source: rtsp://10.0.0.60:7447/eoXEkNsCal7VuCoi
+  verify_ssl: false  
