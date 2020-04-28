@@ -305,6 +305,10 @@ sonos:
       - 10.0.0.77
       - 10.0.0.66
 
+konnected:
+  access_token: W9PFUR5DyPSoxu
+  api_host: http://10.0.0.168:8123
+
 alarm_control_panel:
   - platform: manual
     code: 1234
