@@ -308,6 +308,17 @@ sonos:
 konnected:
   access_token: W9PFUR5DyPSoxu
   api_host: http://10.0.0.168:8123
+  devices:
+    - id: 2cf43256a996
+      switches:
+        - zone: out
+          name: siren
+        - zone: 5
+          name: 'Beep Beep Beep'
+          momentary: 65
+          pause: 55
+          repeat: 3
+
 
 alarm_control_panel:
   - platform: manual
