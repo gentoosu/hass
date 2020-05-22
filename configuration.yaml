@@ -62,8 +62,8 @@ http:
   #ssl_certificate: !secret http_ssl_certificate
   #ssl_key: !secret http_ssl_key
   #base_url: https://thehersh.net
-  internal_url: !secret internal_url
-  external_url: !secret external_url
+  #internal_url: !secret internal_url
+  #external_url: !secret external_url
 
 # Checks for available updates
 updater:
