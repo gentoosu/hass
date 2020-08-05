@@ -13,8 +13,8 @@
   verify_ssl: false  
 - platform: generic
   name: Front Door
-  still_image_url: https://10.0.0.6/snap.jpeg
-  stream_source: rtsp://10.0.0.60:7447/4Uc1k0FynHrNd4uy
+  still_image_url: https://10.0.0.70/snap.jpeg
+  stream_source: rtsp://10.0.0.60:7447/41duBdMbWhBJgzAI
   verify_ssl: false  
 - platform: generic
   name: Patio
