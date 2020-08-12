@@ -230,7 +230,7 @@ switch:
 #automation: !include automation.yaml
 #group: !include group.yaml
 script: !include script.yaml
-image_processing: !include imageproc.yaml
+#image_processing: !include imageproc.yaml
 camera: !include camera.yaml
 
   # - platform: uvc
