@@ -3,12 +3,12 @@
   name: radar
 - platform: generic
   name: Driveway 1
-  still_image_url: https://10.0.0.7/snap.jpeg
+  still_image_url: https://10.0.1.68/snap.jpeg
   stream_source: rtsp://10.0.0.60:7447/B53yBWvLAS5XnOfh
   verify_ssl: false  
 - platform: generic
   name: Driveway 2
-  still_image_url: https://10.0.0.10/snap.jpeg
+  still_image_url: https://10.0.1.69/snap.jpeg
   stream_source: rtsp://10.0.0.60:7447/oCof7Hjfy2e1DsyC
   verify_ssl: false  
 - platform: generic
@@ -18,6 +18,6 @@
   verify_ssl: false  
 - platform: generic
   name: Patio
-  still_image_url: https://10.0.0.11/snap.jpeg
+  still_image_url: https://10.0.1.66/snap.jpeg
   stream_source: rtsp://10.0.0.60:7447/eoXEkNsCal7VuCoi
   verify_ssl: false  
